@@ -1,0 +1,411 @@
+/* ── HERO ───────────────────────────────────────────── */
+#libro-hero {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 40px 0 30px 0;
+}
+#libro-hero .portada {
+    background: radial-gradient(ellipse at center, #ead9c2 0%, #c4a67a 100%);
+    box-shadow: 8px 8px 20px rgba(59, 42, 31, 0.25);
+    position: relative;
+    flex-shrink: 0;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.35s ease;
+}
+#libro-hero .portada:hover {
+    box-shadow: 0 10px 30px rgba(43, 27, 14, 0.45);
+}
+#libro-hero .portada img {
+    width: 100%;
+    border-radius: 6px;
+    filter: sepia(10%) contrast(105%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    display: block;
+}
+#libro-hero .portada:hover img {
+    opacity: 0.15;
+    transform: scale(1.2);
+}
+#libro-hero .portada .portada-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: radial-gradient(ellipse at center, rgba(234,217,194,0.92) 0%, rgba(196,166,122,0.92) 100%);
+    color: #2B1B0E;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 30px rgba(59, 42, 31, 0.15);
+}
+#libro-hero .portada:hover .portada-overlay {
+    opacity: 1;
+}
+#libro-hero .portada .portada-overlay span {
+    display: block;
+    font: bold 17px "Playfair Display", serif;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    color: #2B1B0E;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.3);
+}
+#libro-hero .portada .portada-overlay .cita-autor {
+    font: italic 12px "PT Serif", serif;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+    margin-top: 4px;
+    color: #3B2A1F;
+}
+#libro-hero .portada .portada-overlay small {
+    font: 11px "PT Serif", serif;
+    opacity: 0.65;
+    margin-top: 8px;
+    color: #3B2A1F;
+}
+
+/* ── PLACEHOLDER (cuando la imagen no carga) ────────────── */
+#libro-hero .portada .portada-placeholder {
+    width: 200px;
+    height: 290px;
+    background: radial-gradient(ellipse at center, #ead9c2 0%, #c4a67a 100%);
+    border-radius: 6px;
+    box-shadow: 6px 6px 20px rgba(43, 27, 14, 0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#libro-hero .portada .portada-placeholder span {
+    color: #2B1B0E;
+    font: italic bold 18px "Playfair Display", serif;
+    line-height: 1.4;
+}
+
+#libro-hero .portada .portada-placeholder small {
+    color: #3B2A1F;
+    font: 12px "PT Serif", serif;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+#libro-hero .portada .portada-placeholder {
+    width: 200px;
+    height: 290px;
+    background: linear-gradient(135deg, #3B2A1F 0%, #8B5A2B 100%);
+    border-radius: 6px;
+    box-shadow: 6px 6px 20px rgba(43,27,14,0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+#libro-hero .portada .portada-placeholder span {
+    color: #F4ECE0;
+    font: italic bold 18px "Playfair Display", serif;
+    line-height: 1.4;
+}
+#libro-hero .portada .portada-placeholder small {
+    color: #CBB89A;
+    font: 12px "PT Serif", serif;
+    margin-top: 10px;
+}
+#libro-hero .sinopsis h2 {
+    font: bold 38px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+#libro-hero .sinopsis .subtitulo {
+    font: italic 16px "PT Serif", serif;
+    color: #8B5A2B;
+    margin-bottom: 18px;
+}
+#libro-hero .sinopsis p {
+    font: 16px/1.7 "PT Serif", serif;
+    color: #2B1B0E;
+    text-align: justify;
+    margin-bottom: 14px;
+}
+.ficha-rapida {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.ficha-rapida span {
+    background: #EAD9C2;
+    color: #2B1B0E;
+    font: bold 12px "PT Sans", sans-serif;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid #CBB89A;
+}
+
+/* ── TABS ───────────────────────────────────────────── */
+#tabs-container {
+    margin-top: 30px;
+}
+.tabs-nav {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #8B5A2B;
+    margin-bottom: 0;
+}
+.tabs-nav button {
+    background: #EAD9C2;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    padding: 10px 20px;
+    font: bold 15px "PT Sans", sans-serif;
+    color: #2B1B0E;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    border: 2px solid transparent;
+    border-bottom: none;
+    position: relative;
+    bottom: -3px;
+}
+.tabs-nav button:hover {
+    background: #CBB89A;
+}
+.tabs-nav button.activo {
+    background: #FFFDF9;
+    color: #3B2A1F;
+    border-color: #8B5A2B;
+    border-bottom-color: #FFFDF9;
+    z-index: 1;
+}
+.tab-panel {
+    display: none;
+    background: #FFFDF9;
+    border: 2px solid #8B5A2B;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+}
+.tab-panel.activo {
+    display: block;
+}
+
+/* ── PERSONAJES ─────────────────────────────────────── */
+.personajes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.personaje-card {
+    background: #F4ECE0;
+    border-left: 4px solid #8B5A2B;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 18px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+.personaje-card:hover, .personaje-card.activo {
+    background: #EAD9C2;
+    border-color: #3B2A1F;
+}
+.personaje-card h3 {
+    font: bold 17px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 3px;
+}
+.personaje-card .rol {
+    font: italic 13px "PT Serif", serif;
+    color: #8B5A2B;
+    margin-bottom: 8px;
+}
+.personaje-card p {
+    font: 14px/1.6 "PT Serif", serif;
+    color: #2B1B0E;
+}
+.personaje-detalle {
+    margin-top: 20px;
+    padding: 20px;
+    background: #EAD9C2;
+    border-radius: 8px;
+    border-left: 4px solid #3B2A1F;
+    display: none;
+}
+.personaje-detalle.activo {
+    display: block;
+}
+.personaje-detalle h3 {
+    font: bold 20px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 10px;
+}
+.personaje-detalle p {
+    font: 15px/1.7 "PT Serif", serif;
+    color: #2B1B0E;
+}
+.personaje-detalle .cita-personaje {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: #3B2A1F;
+    border-radius: 6px;
+    font: italic 14px "PT Serif", serif;
+    color: #F4ECE0;
+}
+
+/* ── CAPÍTULOS ──────────────────────────────────────── */
+.capitulo-item {
+    border-bottom: 1px solid #EAD9C2;
+    padding: 0;
+    overflow: hidden;
+}
+.capitulo-item:last-child { border-bottom: none; }
+.capitulo-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+}
+.capitulo-titulo:hover {
+    background: #F4ECE0;
+    border-radius: 6px;
+}
+.capitulo-titulo .num-libro {
+    font: bold 12px "PT Sans", sans-serif;
+    color: #8B5A2B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.capitulo-titulo h3 {
+    font: bold 17px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-top: 2px;
+}
+.capitulo-titulo .flecha {
+    font-size: 18px;
+    color: #8B5A2B;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+.capitulo-item.abierto .flecha {
+    transform: rotate(180deg);
+}
+.capitulo-cuerpo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+.capitulo-cuerpo-inner {
+    padding: 0 16px 18px 16px;
+}
+.capitulo-cuerpo-inner p {
+    font: 15px/1.7 "PT Serif", serif;
+    color: #2B1B0E;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.capitulo-cuerpo-inner .importancia {
+    display: inline-block;
+    background: #8B5A2B;
+    color: #F4ECE0;
+    font: bold 11px "PT Sans", sans-serif;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ── SIMBOLISMOS ────────────────────────────────────── */
+.simbolismo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.simbolismo-card {
+    background: #F4ECE0;
+    border-radius: 8px;
+    padding: 20px;
+    border-top: 4px solid #8B5A2B;
+}
+.simbolismo-card .icono {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.simbolismo-card h3 {
+    font: bold 17px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 8px;
+}
+.simbolismo-card p {
+    font: 14px/1.6 "PT Serif", serif;
+    color: #2B1B0E;
+}
+
+/* ── FRASES ─────────────────────────────────────────── */
+.frases-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.frase-card {
+    background: #F4ECE0;
+    border-radius: 8px;
+    padding: 22px 26px;
+    border-left: 5px solid #3B2A1F;
+    position: relative;
+}
+.frase-card::before {
+    content: '"';
+    font: italic bold 80px "Playfair Display", serif;
+    color: #EAD9C2;
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    line-height: 1;
+}
+.frase-card blockquote {
+    font: italic 17px/1.6 "PT Serif", serif;
+    color: #2B1B0E;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.frase-card .frase-origen {
+    font: bold 13px "PT Sans", sans-serif;
+    color: #8B5A2B;
+    padding-left: 10px;
+}
+
+/* ── SECCIÓN HEADER DENTRO DEL MAIN ─────────────────── */
+#libro-main {
+    padding: 0 20px 40px 20px;
+}
+.separador {
+    height: 2px;
+    background: linear-gradient(to right, #8B5A2B, transparent);
+    margin: 30px 0;
+    border-radius: 2px;
+}
+
+/* ── ANIMACIÓN ──────────────────────────────────────── */
+#libro-hero, #tabs-container {
+    opacity: 0;
+    animation: aparecer 0.6s ease-out forwards;
+}
+#libro-hero    { animation-delay: 0.3s; }
+#tabs-container { animation-delay: 0.5s; }

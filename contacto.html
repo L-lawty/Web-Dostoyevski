@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Contacto — Dostoyevski</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escríbenos sobre Dostoyevski y sus obras">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+    <link rel="icon" type="image/png" href="/imagenes/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/imagenes/favicon.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <h1>Fiódor Mijáilovich Dostoyevski</h1>
+        </div>
+    </header>
+
+    <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="libros/libros.html">Libros</a>
+                    <ul>
+                        <li><a href="libros/LHK.html">Los Hermanos Karamázov</a></li>
+                        <li><a href="libros/los_demonios.html">Los Demonios</a></li>
+                        <li><a href="libros/el_idiota.html">El Idiota</a></li>
+                        <li><a href="libros/cyc.html">Crimen y Castigo</a></li>
+                    </ul>
+                </li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="creditos"><a href="creditos.html">Créditos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <div id="contacto-main">
+
+                <div id="contacto-intro">
+                    <h2>Hablemos de literatura</h2>
+                    <p>¿Tienes una duda, un comentario sobre alguna novela, o simplemente quieres saludar? Escríbeme. Tu nombre quedará como agradecimiento en la sección de créditos.</p>
+                </div>
+
+                <div class="separador"></div>
+
+                <div class="contacto-grid">
+
+                    <!-- ── PANEL IZQUIERDO ── -->
+                    <div class="contacto-info">
+                        <div>
+                            <p class="cita">"Si Dios no existe, todo está permitido."</p>
+                            <p class="cita-autor">— Los Hermanos Karamázov</p>
+                        </div>
+                        <div class="datos">
+                            <p><strong>Sitio académico</strong><br>Proyecto de desarrollo web</p>
+                            <p style="margin-top: 14px;"><strong>Ubicación</strong><br>Honduras, Cortés</p>
+                        </div>
+                    </div>
+
+                    <!-- ── TARJETA DEL FORMULARIO ── -->
+                    <div class="contacto-form-card">
+                        <h3>Envíanos un mensaje</h3>
+                        <p>Todos los campos son obligatorios.</p>
+
+                        <form id="form-contacto"
+                            hx-post="/contacto"
+                            hx-target="#estado-envio"
+                            hx-swap="outerHTML"
+                            hx-disabled-elt="#btn-enviar"
+                            hx-validate="true">
+
+                            <div class="campo">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" minlength="3" required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." minlength="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-enviar" id="btn-enviar">
+                                <span class="btn-label">Enviar mensaje</span>
+                                <span class="htmx-indicator spinner-texto">enviando…</span>
+                            </button>
+
+                            <div class="estado-envio" id="estado-envio"></div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="index.html">Principal</a></p>
+                <p><a href="libros/libros.html">Libros</a></p>
+                <p><a href="historia.html">Historia</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Ayuda</h1>
+                <p><a href="contacto.html">Contacto</a></p>
+                <p><a href="creditos.html">Créditos</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Honduras, Cortés</address>
+                <small>&copy; Darién Calderón 2026</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+
+</body>
+</html>

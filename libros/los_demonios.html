@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Los Demonios — Dostoyevski</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Análisis completo de Los Demonios de Fiódor Dostoyevski">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/libros_plantilla.css">
+    <link rel="icon" type="image/png" href="../imagenes/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../imagenes/favicon.png">
+</head>
+<body>
+
+    <header id="cabeceralogo">
+        <div>
+            <h1>Fiódor Mijáilovich Dostoyevski</h1>
+        </div>
+    </header>
+
+    <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="libros.html">Libros</a>
+                    <ul>
+                        <li><a href="LHK.html">Los Hermanos Karamázov</a></li>
+                        <li><a href="los_demonios.html">Los Demonios</a></li>
+                        <li><a href="el_idiota.html">El Idiota</a></li>
+                        <li><a href="cyc.html">Crimen y Castigo</a></li>
+                    </ul>
+                </li>
+                <li><a href="../historia.html">Historia</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+                <li class="creditos"><a href="../creditos.html">Créditos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="libro-main">
+            <!-- ── HERO ── -->
+            <div id="libro-hero">
+                <div class="portada">
+                    <img src="../imagenes/demonios_alba.jpg" alt="Portada Los Demonios — Alba Clásicos">
+                    <div class="portada-overlay">
+                        <span>Los Demonios</span>
+                        <span class="cita-autor">Fiódor Dostoyevski</span>
+                        <small>1872 · Alba Clásicos</small>
+                    </div>
+                </div>
+                <div class="sinopsis">
+                    <p class="subtitulo">Fiódor Dostoyevski · 1871–1872 · Novela política</p>
+                    <h2>Los Demonios</h2>
+                    <p>Inspirada en el asesinato real del estudiante Ivanov a manos del revolucionario Nechayev en 1869, <em>Los Demonios</em> es la novela más política y profética de Dostoyevski. Una célula de jóvenes nihilistas llega a una ciudad de provincias rusa con la intención de desatar el caos como primer paso hacia la revolución. Lo que ocurre es una espiral de manipulación, traición y destrucción que termina en asesinato, incendio y suicidio.</p>
+                    <p>Dostoyevski no escribió un panfleto político sino una disección del alma de quienes, poseídos por una idea, son capaces de cualquier cosa en su nombre. La novela anticipó con una precisión perturbadora los métodos y la mentalidad del bolchevismo medio siglo antes de que ocurriera.</p>
+                    <div class="ficha-rapida">
+                        <span>Publicado: 1871–1872</span>
+                        <span>También: «Los Endemoniados»</span>
+                        <span>Basada en hechos reales</span>
+                        <span>Novela política y filosófica</span>
+                        <span>Epígrafe: Lucas 8:32–36</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separador"></div>
+
+            <!-- ── TABS ── -->
+            <div id="tabs-container">
+                <div class="tabs-nav">
+                    <button class="activo" onclick="cambiarTab(event, 'personajes')">Personajes</button>
+                    <button onclick="cambiarTab(event, 'capitulos')">Capítulos clave</button>
+                    <button onclick="cambiarTab(event, 'simbolismos')">Simbolismos</button>
+                    <button onclick="cambiarTab(event, 'frases')">Frases</button>
+                </div>
+
+                <!-- TAB: PERSONAJES -->
+                <div id="tab-personajes" class="tab-panel activo">
+                    <div class="personajes-grid">
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'stavrogin')">
+                            <h3>Nikolái Stavrogin</h3>
+                            <div class="rol">El vacío encarnado · Figura central</div>
+                            <p>Joven aristócrata de belleza extraordinaria y voluntad paralizada. No es el villano de la novela — es algo más inquietante: un hombre que lo ha probado todo y no ha encontrado nada que valga. Todos los demás personajes orbitan alrededor de él como planetas sin sol.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'pyotr')">
+                            <h3>Pyotr Verkhovensky</h3>
+                            <div class="rol">El agitador · Basado en Nechayev</div>
+                            <p>Hijo del intelectual liberal Stepan, es el organizador de la célula revolucionaria. Frío, manipulador y sin escrúpulos, no tiene ideología real: solo necesidad de movimiento y destrucción. Dostoyevski lo modeló sobre el revolucionario real Sergei Nechayev.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'kirillov')">
+                            <h3>Alexei Kirillov</h3>
+                            <div class="rol">El filósofo del suicidio</div>
+                            <p>Ingeniero y filósofo autodidacta que ha llegado a la conclusión lógica de que, si Dios no existe, el suicidio voluntario es el único acto verdaderamente libre del ser humano. No es un personaje desesperado — es uno de los más serenos de la novela. Y eso es lo más aterrador.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'shatov')">
+                            <h3>Iván Shatov</h3>
+                            <div class="rol">El exdiscípulo · El traidor que no traiciona</div>
+                            <p>Antiguo seguidor de Stavrogin que se convirtió en nacionalista y creyente. Conoce los secretos de la célula y por eso está condenado. Su asesinato a manos de sus excompañeros es el momento más oscuro y deliberado de la novela.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'stepan')">
+                            <h3>Stepan Verkhovensky</h3>
+                            <div class="rol">El liberal de la vieja guardia · Padre de Pyotr</div>
+                            <p>Intelectual liberal de los años 1840, protegido de Varvara Stavrogina durante décadas. Cómico, vanidoso y en el fondo sincero, representa la generación que sembró ideas sin prever que sus hijos las llevarían a consecuencias que ellos nunca quisieron. La muerte de Stepan es la escena más conmovedora de la novela.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'shigalov')">
+                            <h3>Shigalov</h3>
+                            <div class="rol">El teórico · El ideólogo del totalitarismo</div>
+                            <p>Miembro de la célula que ha desarrollado un sistema filosófico propio. Su conclusión, que él mismo presenta con absoluta honestidad, es la predicción más exacta del totalitarismo del siglo XX escrita antes de que existiera. Aparece poco, pero su intervención es la más perturbadora de toda la novela.</p>
+                        </div>
+
+                    </div>
+
+                    <div id="detalle-stavrogin" class="personaje-detalle">
+                        <h3>Nikolái Stavrogin — El hombre sin centro</h3>
+                        <p>Stavrogin es el personaje más complejo y más debatido de Dostoyevski, y posiblemente de toda la literatura rusa. No actúa por ideología, por pasión ni por maldad convencional. Actúa — o más frecuentemente no actúa — desde un vacío moral absoluto. Ha sido revolucionario, creyente, libertino y asceta, y ninguna de esas identidades lo ha llenado.</p>
+                        <p>El capítulo censurado de la novela, «La confesión de Stavrogin», revela que abusó sexualmente de una niña de doce años y luego asistió pasivamente a su suicidio. Dostoyevski lo incluyó no para escandalizarlo al lector, sino para mostrar el único acto de maldad pura — sin justificación, sin pasión, sin ideología — del que Stavrogin es capaz. Y que ese acto tampoco lo transformó en nada.</p>
+                        <p>Su suicidio al final no es el gesto romántico del héroe trágico — es la eliminación de un hombre que nunca encontró razón para existir.</p>
+                        <div class="cita-personaje">"Ni en mi tierra natal ni fuera de ella podré encontrar lo que me falta en mí mismo. Sé que debería matar algo en mí, no a otros."</div>
+                    </div>
+
+                    <div id="detalle-pyotr" class="personaje-detalle">
+                        <h3>Pyotr Verkhovensky — La revolución como nihilismo puro</h3>
+                        <p>Pyotr no cree en ninguna revolución. Usa las ideas revolucionarias como herramienta de control: quien ha cometido un crimen junto a otros queda atado a ellos para siempre. Su método es hacer cómplices, no convencer. La célula de cinco personas que organiza no es para liberar a nadie — es para crear una red de terror mutuo.</p>
+                        <p>Lo que hace a Pyotr más inquietante que un villano convencional es que Dostoyevski lo basó meticulosamente en Sergei Nechayev, revolucionario real que escribió el «Catecismo del Revolucionario» — un documento que afirmaba que el revolucionario verdadero no tiene ética, nombre, afectos ni propiedades, solo la destrucción. Lenin lo admiró profundamente.</p>
+                        <div class="cita-personaje">"Una o dos generaciones de libertinaje son necesarias ahora; un libertinaje inaudito y abyecto que transforme a los hombres en bestias. ¿Por qué? Porque después será más fácil."</div>
+                    </div>
+
+                    <div id="detalle-kirillov" class="personaje-detalle">
+                        <h3>Alexei Kirillov — La lógica llevada hasta el final</h3>
+                        <p>Kirillov es uno de los personajes más originales de toda la literatura. Ha razonado de la siguiente manera: el mayor miedo del hombre es el miedo a la muerte; ese miedo es el origen de toda su esclavitud moral, política y religiosa; por lo tanto, el hombre que voluntariamente elige la muerte demuestra que es completamente libre y, al hacerlo, se convierte en dios.</p>
+                        <p>Lo perturbador es que su argumento es internamente coherente y que Kirillov lo presenta con absoluta serenidad, sin angustia, con la paz de quien ha resuelto el problema central de la existencia. Dostoyevski lo construyó para mostrar adónde lleva la razón cuando se separa completamente de la fe: no a la locura, sino a una lógica impecable que termina en suicidio.</p>
+                        <p>Pyotr Verkhovensky usa esa decisión fría como herramienta política: convence a Kirillov de firmar una confesión falsa antes de morir, cargando el asesinato de Shatov sobre un hombre que de todas formas va a matarse.</p>
+                        <div class="cita-personaje">"Si Dios existe, toda la voluntad es suya y yo no puedo salir de su voluntad. Si no existe, toda la voluntad es mía y yo estoy obligado a afirmar mi autodominio. Es necesario que me mate a mí mismo para empezar y para demostrar mi rebelión."</div>
+                    </div>
+
+                    <div id="detalle-shatov" class="personaje-detalle">
+                        <h3>Iván Shatov — La fe sin certeza</h3>
+                        <p>Shatov es el personaje más cercano a la posición de Dostoyevski en la novela: un hombre que abandonó el nihilismo y busca recuperar la fe en el pueblo ruso y en Cristo, pero que todavía no ha llegado a creer del todo. Cuando Stavrogin le pregunta si cree en Dios, Shatov responde: «Yo creeré en Dios».</p>
+                        <p>Esa distinción — no «creo» sino «creeré» — es uno de los momentos más honestos de toda la obra de Dostoyevski. La fe como proceso, no como posesión. Su asesinato ocurre la misma noche en que su mujer, que lo había abandonado, regresa y da a luz a un hijo. Es la noche más feliz de su vida. Dostoyevski no lo mata por crueldad narrativa: lo mata para mostrar que la célula nihilista destruye precisamente lo que más merece vivir.</p>
+                        <div class="cita-personaje">"Si creo en el diablo, quizás no creo en Dios. [...] Yo buscaré a Dios. ¿Y si no lo encuentro? Seguiré buscando."</div>
+                    </div>
+
+                    <div id="detalle-stepan" class="personaje-detalle">
+                        <h3>Stepan Verkhovensky — El padre que sembró el viento</h3>
+                        <p>Stepan es, en un nivel, un personaje cómico: vanidoso, cobarde, dependiente de la protección de Varvara Stavrogina, obsesionado con su reputación de intelectual perseguido. Pero Dostoyevski lo usa para una acusación seria: la generación liberal de los años 1840 que llenó los salones de ideas de libertad y progreso sin prever que esas ideas, vaciadas de su contexto humanista, se convertirían en la justificación del terror.</p>
+                        <p>En su deathbed, mientras un campesino le lee el Evangelio, Stepan tiene una revelación: habla de los cerdos de Gadara del epígrafe y dice que los demonios que han poseído a los jóvenes nihilistas son los mismos que él y su generación sembraron en Rusia. Es una autocrítica que pocas figuras literarias tienen el coraje de hacer al morir.</p>
+                        <div class="cita-personaje">"¡Lo más verdadero es la vida! Yo he mentido toda mi vida. Incluso cuando decía la verdad. Nunca hablé por la verdad, sino siempre por mí mismo."</div>
+                    </div>
+
+                    <div id="detalle-shigalov" class="personaje-detalle">
+                        <h3>Shigalov — El arquitecto del totalitarismo</h3>
+                        <p>Shigalov tiene pocas escenas pero su intervención en la reunión de la célula es una de las páginas más escalofriantes de la literatura del siglo XIX. Explica que lleva años trabajando en un sistema para la organización perfecta de la sociedad humana. Y que, al concluirlo, descubrió algo que lo perturbó: el punto de partida era la libertad ilimitada y el punto de llegada era el despotismo ilimitado.</p>
+                        <p>A diferencia de otros personajes que disfrazan sus impulsos de poder con ideología, Shigalov lo dice con total honestidad, incluso con aparente pesar. No encontró otra salida al problema. Su propuesta concreta: dividir a la humanidad en dos partes — un décimo con libertad absoluta sobre los otros nueve décimos, que serán reducidos a un estado de obediencia animal. Dostoyevski escribió esto en 1871. Stalin lo implementó en la práctica sesenta años después.</p>
+                        <div class="cita-personaje">"Partiendo de la libertad ilimitada, llego al despotismo ilimitado. Añadiré, no obstante, que fuera de mi solución no puede existir ninguna otra."</div>
+                    </div>
+
+                </div>
+
+                <!-- TAB: CAPÍTULOS -->
+                <div id="tab-capitulos" class="tab-panel">
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Epígrafe · Lucas 8:32–36</div>
+                                <h3>Los cerdos de Gadara</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La clave de lectura de toda la novela</span>
+                                <p>Dostoyevski abre la novela con dos epígrafes. El segundo es el pasaje del Evangelio de Lucas donde Jesús expulsa demonios del cuerpo de un hombre y los envía a una piara de cerdos, que se lanza por un precipicio al lago y se ahoga. Entonces el hombre curado se sienta, vestido y en su sano juicio, a los pies de Cristo.</p>
+                                <p>El epígrafe es el esquema narrativo completo: Rusia es el endemoniado; los nihilistas son los demonios que la poseen; la novela es la expulsión y la destrucción de esos demonios. Y la promesa implícita — que después del desastre, Rusia podría también sentarse curada y en su sano juicio — es la única nota de esperanza en una novela de oscuridad casi total.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte I · Capítulo II</div>
+                                <h3>El príncipe Harry. El matrimonio</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La presentación de Stavrogin</span>
+                                <p>La presentación de Stavrogin es una de las más cuidadas de toda la obra de Dostoyevski. No aparece hasta que todos los demás personajes ya han hablado de él durante cien páginas, creando una expectativa casi mítica. Cuando llega, es exactamente lo que se esperaba — y al mismo tiempo, algo completamente diferente.</p>
+                                <p>En este capítulo se revelan algunos de sus actos pasados: morderle la oreja al gobernador, besar a la mujer de otro hombre delante de su marido, dejarse abofetear sin responder. No son actos de pasión sino experimentos: Stavrogin pone a prueba los límites de la realidad social para ver si siente algo. Nunca siente nada.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Capítulo censurado · «Tikhon»</div>
+                                <h3>La confesión de Stavrogin</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">El capítulo más oscuro — suprimido en vida del autor</span>
+                                <p>El editor de Dostoyevski se negó a publicar este capítulo. Apareció por primera vez en 1922, cuarenta años después de la muerte del autor. En él, Stavrogin visita al obispo retirado Tikhon y le muestra un documento escrito donde confiesa haber abusado sexualmente de Matryosha, una niña de doce años, y haber observado pasivamente su suicidio.</p>
+                                <p>Lo más perturbador no es el acto sino la razón por la que Stavrogin lo confiesa: no busca absolución ni perdón. Quiere publicar la confesión, hacerla pública, humillarse ante el mundo. Tikhon le dice que esa humillación también es una forma de orgullo — y que lo que Stavrogin necesita no es hacer pública su vergüenza sino soportarla en privado, algo que Stavrogin es incapaz de hacer.</p>
+                                <p>Sin este capítulo, Stavrogin es un misterio. Con él, es el retrato de un hombre que ha destruido su capacidad de arrepentirse genuinamente — y que lo sabe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte II · Capítulo VII</div>
+                                <h3>Con los nuestros. La reunión de la célula</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">El totalitarismo anunciado</span>
+                                <p>La reunión de la célula de cinco es una de las escenas más grotescas y proféticas de la novela. Los revolucionarios que se han reunido para planear la liberación de la humanidad terminan en una discusión interna caótica, llena de suspicacias, acusaciones cruzadas y miedo mutuo. Nadie confía en nadie.</p>
+                                <p>Es en esta reunión donde Shigalov presenta su sistema. Y donde Lyamshin, uno de los miembros, propone que cuando llegue la revolución, el diez por ciento de la humanidad ejerza el poder sobre el noventa por ciento restante. La propuesta se recibe con incomodidad pero sin rechazo categórico. Dostoyevski muestra que el totalitarismo no nace de villanos que saben que son villanos — nace de personas ordinarias que se han convencido de que su causa justifica cualquier método.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte III · Capítulo IV</div>
+                                <h3>La última decisión de Kirillov</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La filosofía convertida en acto</span>
+                                <p>La escena del suicidio de Kirillov es una de las más tensas de la novela. Pyotr llega a su habitación para que firme la confesión falsa que cargará el crimen de Shatov sobre él. Kirillov accede — para él, lo que firme antes de morir no importa, porque en minutos habrá demostrado la libertad absoluta.</p>
+                                <p>Pero la escena se vuelve bizarra: Kirillov retrasa el momento, habla de Dios y de la libertad, come manzana. Pyotr, que no comprende la filosofía de Kirillov sino solo su utilidad, se impacienta. Cuando finalmente ocurre, es repentino y violento, y Pyotr queda solo en la habitación con el cuerpo, en un silencio que Dostoyevski describe con una precisión clínica que resulta más perturbadora que cualquier dramatismo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte III · Capítulo V–VI</div>
+                                <h3>El incendio. El asesinato de Shatov</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La noche más larga de la novela</span>
+                                <p>En el clímax de la novela ocurren tres cosas simultáneamente: la ciudad arde (incendio provocado por la célula como distracción), la mujer de Shatov regresa después de años de ausencia y da a luz a un hijo que no es de él, y la célula asesina a Shatov en un parque a las afueras de la ciudad.</p>
+                                <p>Dostoyevski construye estas tres líneas en paralelo con un ritmo que resulta insoportable. Shatov, que acaba de vivir la noche más feliz de su vida — el nacimiento del niño que decide amar como propio — es asesinado por hombres que fueron sus camaradas. No hay traición más deliberada ni más fría en toda la literatura rusa.</p>
+                                <p>El contraste entre el nacimiento y la muerte no es un recurso sentimental: es la tesis central de la novela. El nihilismo destruye exactamente aquello que más merece existir.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte III · Capítulo VIII — Epílogo</div>
+                                <h3>La muerte de Stepan. La carta de Stavrogin</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">El único momento de gracia en la novela</span>
+                                <p>Stepan Verkhovensky, el viejo liberal que desencadenó todo sin quererlo, muere en casa de unos campesinos después de huir de la ciudad. Una mujer del pueblo le lee el Evangelio. Stepan — que durante décadas fingió ser perseguido por sus ideas mientras vivía cómodamente bajo la protección de una aristócrata — tiene en la muerte la única lucidez genuina de su vida. Reconoce que mintió siempre. Pide que le lean el pasaje de los cerdos de Gadara.</p>
+                                <p>Stavrogin, mientras tanto, escribe una carta donde renuncia a todo y se prepara para suicidarse. La carta no tiene el dramatismo de una despedida romántica: es el documento de un hombre que concluye, sin emoción, que no tiene nada que hacer en el mundo. Aparece colgado al amanecer. La novela termina sin redención, sin esperanza declarada — solo con el epígrafe que la abre, que el lector ahora puede releer sabiendo que la curación, si llegó, fue para Rusia, no para sus personajes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- TAB: SIMBOLISMOS -->
+                <div id="tab-simbolismos" class="tab-panel">
+                    <div class="simbolismo-grid">
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family: serif; font-size:22px; font-weight:bold; color:#8B5A2B;">✝</div>
+                            <h3>Los cerdos endemoniados</h3>
+                            <p>El epígrafe del Evangelio de Lucas no es decoración literaria sino el esquema estructural de la novela entera. Los nihilistas son los demonios; Rusia es el poseído; el desastre final es la expulsión. La piara se lanza al precipicio — los revolucionarios se destruyen entre sí — y el endemoniado queda libre. Dostoyevski creía genuinamente que el nihilismo era una posesión espiritual, no una posición filosófica.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family: serif; font-size:22px; font-weight:bold; color:#8B5A2B;">◻</div>
+                            <h3>El vacío de Stavrogin</h3>
+                            <p>Stavrogin no es el demonio de la novela — es el vacío alrededor del cual los demonios se organizan. Su belleza, su inteligencia y su falta total de centro moral lo hacen irresistible para todos: Pyotr lo quiere como figura de autoridad para la revolución, Shatov lo siguió buscando una guía espiritual, Kirillov lo respeta como al único que podría comprender su filosofía. Nadie obtiene nada de él porque no tiene nada que dar.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family: serif; font-size:22px; font-weight:bold; color:#8B5A2B;">△</div>
+                            <h3>El fuego</h3>
+                            <p>El incendio que Pyotr organiza como distracción para el asesinato de Shatov no es solo un recurso narrativo. El fuego recorre toda la novela como imagen de la destrucción ideológica: Stepan dice en un momento que los incendiarios no son los que queman edificios sino los que queman mentes. La ciudad ardiendo mientras se comete un asesinato en el bosque es la visualización literal de lo que Dostoyevski quería mostrar: el nihilismo como incendio que nadie controla una vez que empieza.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family: serif; font-size:22px; font-weight:bold; color:#8B5A2B;">∞</div>
+                            <h3>El sistema de Shigalov</h3>
+                            <p>Shigalov no es un personaje secundario sino una conclusión lógica. Su sistema — libertad ilimitada que lleva inevitablemente al despotismo ilimitado — es la formulación más honesta de lo que el nihilismo político contiene desde el principio. Dostoyevski pone en su boca la crítica más devastadora al utopismo revolucionario no desde la reacción conservadora sino desde la lógica interna del propio sistema. Si no hay valores absolutos, el poder llena el vacío.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family: serif; font-size:22px; font-weight:bold; color:#8B5A2B;">○</div>
+                            <h3>La célula de cinco</h3>
+                            <p>La estructura de la célula revolucionaria — cinco personas que han cometido juntas un crimen y por eso no pueden traicionarse — es el símbolo del nihilismo como trampa. Nadie en la célula cree del todo en la causa; todos están atrapados por el miedo mutuo. Dostoyevski muestra que el terror no es un exceso de la revolución sino su mecanismo central: sin la amenaza de la traición y el castigo, la célula no funcionaría un día. La fraternidad revolucionaria es, en su interior, una prisión.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family: serif; font-size:22px; font-weight:bold; color:#8B5A2B;">↓</div>
+                            <h3>El suicidio lógico</h3>
+                            <p>El suicidio de Kirillov y el de Stavrogin son opuestos en su significado. Kirillov se mata como afirmación de libertad — el acto más consciente y deliberado posible. Stavrogin se mata por agotamiento — la incapacidad de encontrar una razón para continuar. Juntos forman los dos extremos del nihilismo: la voluntad hipertrofiada y la voluntad extinguida. Dostoyevski los mata a ambos para mostrar que ninguno de los dos caminos lleva a algún lugar donde valga la pena estar.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family: serif; font-size:22px; font-weight:bold; color:#8B5A2B;">⊕</div>
+                            <h3>El nacimiento en la noche del asesinato</h3>
+                            <p>El hijo que nace la noche en que matan a Shatov — un hijo que no es biológicamente suyo pero que él decide amar — es el único símbolo de vida genuina en una novela de destrucción. Dostoyevski no lo coloca ahí para consolar al lector: lo coloca para hacer el asesinato de Shatov insoportable. La célula nihilista no mata a un enemigo político. Mata al único personaje de la novela que ha elegido conscientemente amar algo.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family: serif; font-size:22px; font-weight:bold; color:#8B5A2B;">◁</div>
+                            <h3>La generación de los padres</h3>
+                            <p>Stepan Verkhovensky representa la acusación más seria de la novela: el liberalismo de los años 1840 que hablaba de libertad, progreso y humanismo en los salones de los aristócratas mientras el pueblo permanecía en la miseria. Sus ideas, vaciadas de contexto, pasaron a la generación siguiente convertidas en nihilismo puro. Dostoyevski sugiere que los «demonios» no llegaron de afuera — fueron criados en casa, con buenas intenciones.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB: FRASES -->
+                <div id="tab-frases" class="tab-panel">
+                    <div class="frases-lista">
+
+                        <div class="frase-card">
+                            <blockquote>Partiendo de la libertad ilimitada, llego al despotismo ilimitado. Añadiré, no obstante, que fuera de mi solución no puede existir ninguna otra.</blockquote>
+                            <div class="frase-origen">Shigalov · La reunión de la célula · Parte II</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Si Dios existe, toda la voluntad es suya y yo no puedo salir de su voluntad. Si no existe, toda la voluntad es mía y yo estoy obligado a afirmar mi autodominio.</blockquote>
+                            <div class="frase-origen">Alexei Kirillov</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Una o dos generaciones de libertinaje son necesarias ahora; un libertinaje inaudito que transforme a los hombres en bestias. ¿Por qué? Porque después será más fácil.</blockquote>
+                            <div class="frase-origen">Pyotr Verkhovensky</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Ni en mi tierra natal ni fuera de ella podré encontrar lo que me falta en mí mismo. Sé que debería matar algo en mí, no a otros. Pero no soy capaz de nada.</blockquote>
+                            <div class="frase-origen">Nikolái Stavrogin · Carta de despedida</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>El que aprenda a dominar el dolor y el miedo se convertirá en un dios. Entonces Dios no existirá más.</blockquote>
+                            <div class="frase-origen">Alexei Kirillov</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>¡Lo más verdadero es la vida! Yo he mentido toda mi vida. Incluso cuando decía la verdad. Nunca hablé por la verdad, sino siempre por mí mismo.</blockquote>
+                            <div class="frase-origen">Stepan Verkhovensky · Palabras antes de morir</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>No somos nosotros quienes necesitamos a las personas — son ellas las que nos necesitan a nosotros. ¿No es así la única forma de poder?</blockquote>
+                            <div class="frase-origen">Pyotr Verkhovensky</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>El hombre es desgraciado porque no sabe que es feliz. Solo por eso. Esto es todo. El que lo sepa se hará feliz inmediatamente, en ese mismo instante.</blockquote>
+                            <div class="frase-origen">Alexei Kirillov</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><!-- /tabs-container -->
+
+        </div><!-- /libro-main -->
+    </main>
+
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="../index.html">Principal</a></p>
+                <p><a href="libros.html">Libros</a></p>
+                <p><a href="../historia.html">Historia</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Ayuda</h1>
+                <p><a href="../contacto.html">Contacto</a></p>
+                <p><a href="../creditos.html">Créditos</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Honduras, Cortés</address>
+                <small>&copy; Darién Calderón 2026</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+
+    <script src="../js/libros.js"></script>
+</body>
+</html>

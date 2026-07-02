@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Los Hermanos Karamázov — Dostoyevski</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Análisis completo de Los Hermanos Karamázov de Fiódor Dostoyevski">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/libros_plantilla.css">
+    <link rel="icon" type="image/png" href="../imagenes/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../imagenes/favicon.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <h1>Fiódor Mijáilovich Dostoyevski</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="libros.html">Libros</a>
+                    <ul>
+                        <li><a href="LHK.html">Los Hermanos Karamázov</a></li>
+                        <li><a href="los_demonios.html">Los Demonios</a></li>
+                        <li><a href="el_idiota.html">El Idiota</a></li>
+                        <li><a href="cyc.html">Crimen y Castigo</a></li>
+                    </ul>
+                </li>
+                <li><a href="../historia.html">Historia</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+                <li class="creditos"><a href="../creditos.html">Créditos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="libro-main">
+            <!-- ── HERO ── -->
+            <div id="libro-hero">
+                <div class="portada">
+                    <img src="../imagenes/LHK_alba.jpg" alt="Portada Los Hermanos Karamázov — Alba Clásicos"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="portada-overlay">
+                        <span>Los Hermanos Karamázov</span>
+                        <span class="cita-autor">Fiódor Dostoyevski</span>
+                        <small>1880 · Alba Clásicos</small>
+                    </div>
+                </div>
+                <div class="sinopsis">
+                    <p class="subtitulo">Fiódor Dostoyevski · 1880 · Última novela</p>
+                    <h2>Los Hermanos Karamázov</h2>
+                    <p>La obra cumbre de Dostoyevski y, para muchos críticos, la novela más grande jamás escrita. Publicada en 1880, un año antes de la muerte del autor, narra el conflicto entre los tres hijos del terrateniente Fiódor Karamázov: Dmitri, el apasionado; Ivan, el intelectual escéptico; y Alyosha, el espiritual. Cuando el padre aparece asesinado, la investigación se convierte en un juicio sobre la naturaleza humana, la fe, la razón y la moral.</p>
+                    <p>La novela explora con profundidad inigualable preguntas que siguen siendo vigentes: ¿puede existir la moral sin Dios? ¿Es el hombre libre o esclavo de sus pasiones? ¿Qué nos hace responsables de nuestros actos?</p>
+                    <div class="ficha-rapida">
+                        <span> Publicado: 1880</span>
+                        <span> ~1.000 páginas</span>
+                        <span> San Petersburgo</span>
+                        <span> Novela filosófica</span>
+                        <span> Última obra de Dostoyevski</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separador"></div>
+
+            <!-- ── TABS ── -->
+            <div id="tabs-container">
+                <div class="tabs-nav">
+                    <button class="activo" onclick="cambiarTab(event, 'personajes')">Personajes</button>
+                    <button onclick="cambiarTab(event, 'capitulos')">Capítulos clave</button>
+                    <button onclick="cambiarTab(event, 'simbolismos')">Simbolismos</button>
+                    <button onclick="cambiarTab(event, 'frases')">Frases</button>
+                </div>
+
+                <!-- TAB: PERSONAJES -->
+                <div id="tab-personajes" class="tab-panel activo">
+                    <div class="personajes-grid">
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'mitya')">
+                            <h3>Dmitri Karamázov</h3>
+                            <div class="rol">«Mitya» · El hermano apasionado</div>
+                            <p>El mayor de los hermanos legítimos. Impulsivo, derrochador y apasionado, representa el cuerpo y las pasiones humanas. Su relación con el dinero y con Grushenka lo pone en el centro del crimen.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'ivan')">
+                            <h3>Ivan Karamázov</h3>
+                            <div class="rol">El hermano intelectual</div>
+                            <p>El segundo hijo. Brillante y frío, encarna la razón y el ateísmo filosófico. Su poema «El Gran Inquisidor» es uno de los textos más debatidos de la filosofía occidental. Su escepticismo lo destruye desde adentro.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'alyosha')">
+                            <h3>Alyosha Karamázov</h3>
+                            <div class="rol">El hermano espiritual · Protagonista</div>
+                            <p>El menor y el héroe moral de la novela. Novicio en un monasterio, discípulo del Padre Zosima. Representa la fe, la compasión y el amor activo. El único Karamázov que no queda corrompido.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'smerd')">
+                            <h3>Pável Smerdyákov</h3>
+                            <div class="rol">El hijo ilegítimo</div>
+                            <p>Hijo bastardo de Fiódor, criado como sirviente. Epiléptico, resentido y manipulador. Influenciado por las ideas nihilistas de Ivan, comete el acto más oscuro de la novela. La encarnación del «todo está permitido».</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'zosima')">
+                            <h3>El Padre Zosima</h3>
+                            <div class="rol">El Starets · Guía espiritual</div>
+                            <p>El anciano monje y mentor de Alyosha. Representa la sabiduría, el amor incondicional y la fe activa. Sus enseñanzas sobre la responsabilidad universal forman el contrapeso filosófico al ateísmo de Ivan.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'grusha')">
+                            <h3>Agrafena Grushenka</h3>
+                            <div class="rol">La mujer fatal</div>
+                            <p>Comerciante joven y seductora que tanto Dmitri como el anciano Fiódor desean obsesivamente. Aunque comienza como antagonista, Dostoyevski la transforma en un personaje de complejidad moral sorprendente.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Panel de detalle del personaje -->
+                    <div id="detalle-mitya" class="personaje-detalle">
+                        <h3>Dmitri «Mitya» Karamázov — El cuerpo y las pasiones</h3>
+                        <p>Dmitri es el hijo que más hereda de la naturaleza desordenada de su padre, aunque también posee una nobleza que Fiódor nunca tuvo. Ex oficial del ejército, vive endeudado y en conflicto permanente con su padre por una herencia que cree que le corresponde. Su amor tormentoso por Grushenka, compartido con su propio padre, lo coloca como sospechoso número uno cuando Fiódor aparece muerto.</p>
+                        <p>Su arco narrativo es el del hombre que se enfrenta a la culpa y la redención: aunque no mató a su padre, cargó con pensamientos de hacerlo. Dostoyevski lo usa para explorar si el deseo de un crimen es tan grave como el crimen mismo, y si el sufrimiento puede purificar al ser humano.</p>
+                        <div class="cita-personaje">"Soy un Karamázov. Cuando caigo en el abismo, caigo directamente, cabeza abajo, con las piernas al aire, y hasta me satisface caer de esa forma."</div>
+                    </div>
+                    <div id="detalle-ivan" class="personaje-detalle">
+                        <h3>Ivan Karamázov — La razón contra Dios</h3>
+                        <p>Ivan representa la crisis intelectual de la Europa del siglo XIX: el hombre que ha construido un sistema filosófico brillante pero que, en su lógica implacable, destruye los cimientos de la moral. Su argumento más famoso: si Dios existe y permite el sufrimiento de los niños inocentes, entonces no merece ser adorado.</p>
+                        <p>Su creación literaria dentro de la novela, «El Gran Inquisidor», es un poema en prosa donde Cristo regresa durante la Inquisición y es encarcelado por la misma institución que dice representarlo. Es considerado uno de los textos filosóficos más importantes del siglo XIX. Al final, Ivan colapsa mentalmente — Dostoyevski sugiere que la razón sin fe conduce a la locura.</p>
+                        <div class="cita-personaje">"Si Dios no existe, todo está permitido." — La idea que Smerdyákov tomó demasiado en serio.</div>
+                    </div>
+                    <div id="detalle-alyosha" class="personaje-detalle">
+                        <h3>Alyosha Karamázov — El amor activo</h3>
+                        <p>Alyosha es el intento de Dostoyevski de crear un héroe cristiano creíble en la modernidad, no un santo de vitral sino un joven concreto, cálido y presente. A diferencia de los santos pasivos, Alyosha practica lo que el Padre Zosima llama «el amor activo»: estar presente en el sufrimiento ajeno, sin juzgar, sin predicar.</p>
+                        <p>Su papel en la trama es el de ser el hilo conector entre todos los personajes: escucha a Ivan su poema del Gran Inquisidor, acompaña a Dmitri en su proceso, consuela a los niños del pueblo. Dostoyevski lo concibió como el protagonista de una segunda novela que nunca llegó a escribir, donde Alyosha entraría en el mundo secular.</p>
+                        <div class="cita-personaje">"Ama a toda la creación de Dios, al todo y a cada granito de arena. Ama a cada pequeño ser. Ama a las plantas, ama a los animales, ama todo."</div>
+                    </div>
+                    <div id="detalle-smerd" class="personaje-detalle">
+                        <h3>Pável Smerdyákov — La idea convertida en crimen</h3>
+                        <p>Smerdyákov es quizás el personaje más inquietante de la novela: el hombre que tomó la filosofía de Ivan al pie de la letra. Criado como un extraño en la casa de su propio padre (que nunca lo reconoció formalmente), desarrolló un odio frío y calculador hacia el mundo que lo rechazó.</p>
+                        <p>Su epilepsia — que usa estratégicamente como coartada — es un símbolo de su dualidad: superficialmente débil, internamente manipulador. Dostoyevski lo usa para mostrar el peligro de las ideas nihilistas cuando caen en manos de personas sin ancla moral. La conversación final entre Ivan y Smerdyákov es uno de los momentos más perturbadores de la literatura universal.</p>
+                        <div class="cita-personaje">"Fue usted quien me enseñó que todo está permitido, así que yo fui el ejecutor y usted, el verdadero asesino."</div>
+                    </div>
+                    <div id="detalle-zosima" class="personaje-detalle">
+                        <h3>El Padre Zosima — La fe encarnada</h3>
+                        <p>El Starets Zosima es el polo positivo de la novela: la respuesta de Dostoyevski al nihilismo de Ivan. Anciano monje de profunda sabiduría, sus enseñanzas recuerdan a las del budismo zen tanto como al cristianismo ortodoxo: la responsabilidad de cada ser humano ante todos los demás, la importancia del amor concreto sobre el amor abstracto.</p>
+                        <p>Su muerte y la descomposición de su cuerpo (que en la tradición ortodoxa no debería ocurrirle a un santo) representa una crisis de fe para Alyosha y una oportunidad para Dostoyevski de mostrar que la fe verdadera no depende de los milagros. Sus enseñanzas, recogidas por Alyosha, forman el núcleo espiritual de la novela.</p>
+                        <div class="cita-personaje">"Ama a los hombres incluso en su pecado, pues ese amor ya se parece al amor divino y es la cumbre del amor en la tierra."</div>
+                    </div>
+                    <div id="detalle-grusha" class="personaje-detalle">
+                        <h3>Grushenka — Más allá del estereotipo</h3>
+                        <p>Grushenka comienza siendo presentada como la femme fatale que destruirá a los Karamázov, pero Dostoyevski la transforma en algo mucho más interesante. Su historia de abandono (fue seducida y dejada por un oficial polaco de joven) explica, sin justificar, su comportamiento provocador y su deseo de poder sobre los hombres.</p>
+                        <p>Su relación con Alyosha es uno de los momentos más bellos de la novela: en su conversación, ambos terminan consolándose mutuamente, y Grushenka muestra una generosidad y profundidad que nadie esperaba de ella. Dostoyevski la usa para afirmar que ningún ser humano puede ser reducido a su peor faceta.</p>
+                        <div class="cita-personaje">"Quizás yo también sea buena, quizás también yo sea capaz de bondad. ¿Por qué tenéis todos tan mala opinión de mí?"</div>
+                    </div>
+                </div>
+
+                <!-- TAB: CAPÍTULOS -->
+                <div id="tab-capitulos" class="tab-panel">
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Libro II — Un encuentro inapropiado</div>
+                                <h3>La llegada al monasterio</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">Introducción de los ejes</span>
+                                <p>Los Karamázov se reúnen por primera vez en el monasterio del Padre Zosima con la esperanza de que el anciano mediara en el conflicto entre Dmitri y su padre por la herencia. La reunión termina en escándalo cuando Fiódor convierte la visita en una farsa bufonesca.</p>
+                                <p>Este capítulo establece visualmente los tres ejes de la novela: el mundo espiritual (Zosima, Alyosha), el mundo racional (Ivan), y el mundo de las pasiones (Dmitri, Fiódor). La tensión entre ellos ya es insostenible desde el principio.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Libro V · Capítulo 5 — Pro y contra</div>
+                                <h3>El Gran Inquisidor</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">⭐ El capítulo más famoso</span>
+                                <p>Ivan le relata a Alyosha un poema en prosa de su autoría: Cristo regresa a la Sevilla del siglo XVI durante la Inquisición. El Gran Inquisidor lo reconoce, lo encarcela y le explica por qué la Iglesia rechaza su regreso: la humanidad no quiere libertad, quiere pan, milagros y autoridad.</p>
+                                <p>El Inquisidor le dice a Cristo que la Iglesia corrigió su "error" al rechazar las tres tentaciones del diablo en el desierto. Al aceptar la libertad humana, Cristo condenó a los hombres a la angustia. La Iglesia, en cambio, les ofrece la felicidad de la obediencia.</p>
+                                <p>Cristo no responde con palabras: al final, simplemente besa al anciano en los labios. Es quizás la respuesta más poderosa y debatida de la historia de la literatura. Teólogos, filósofos y escritores del siglo XX (desde Camus hasta Freud) han analizado este capítulo como texto independiente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Libro VI — El monje ruso</div>
+                                <h3>Las enseñanzas y vida del Padre Zosima</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">Contrapeso espiritual del Gran Inquisidor</span>
+                                <p>Inmediatamente después de «El Gran Inquisidor», Dostoyevski dedica todo el Libro VI a las memorias y enseñanzas del Padre Zosima, narradas por Alyosha. No es un accidente estructural: es la respuesta directa al argumento de Ivan, no con lógica sino con vida.</p>
+                                <p>Zosima habla de la responsabilidad universal («todos somos responsables ante todos y por todo»), del amor activo como única respuesta al sufrimiento, y de cómo la belleza salvará al mundo. Sus memorias incluyen la historia de su hermano moribundo, cuya muerte lo transformó.</p>
+                                <p>Muchos críticos consideran este Libro VI como la declaración de fe más honesta y compleja de Dostoyevski, precisamente porque no niega los argumentos de Ivan sino que los enfrenta desde otro nivel de experiencia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Libro IX — El examen previo</div>
+                                <h3>La noche de Dmitri</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">El crimen y sus consecuencias</span>
+                                <p>Dmitri es arrestado acusado del asesinato de su padre. Los interrogatorios de esta sección son una obra maestra del análisis psicológico: Dostoyevski muestra cómo el sistema judicial, que busca la verdad, puede llegar a conclusiones completamente falsas siguiendo procedimientos aparentemente correctos.</p>
+                                <p>Dmitri, que es inocente del asesinato pero se siente culpable por haberlo deseado, reacciona de manera que lo incrimina. La culpa moral y la culpa legal se confunden de manera perturbadora. Esta sección es precursora del existencialismo de Camus en «El Extranjero».</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Libro XI · Capítulo 9</div>
+                                <h3>El diablo. La pesadilla de Ivan</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La crisis del racionalismo</span>
+                                <p>Ivan, que está al borde del colapso mental, tiene una visión del diablo: no un ser majestuoso y aterrador, sino un caballero ruso de mediana edad, aburrido y vulgar, que se dedica a burlarse de él con sofismas filosóficos.</p>
+                                <p>El diablo de Ivan le recuerda sus propias ideas: que todo está permitido, que no existe el bien ni el mal absolutos. Ivan no sabe si el diablo es real o una proyección de su propia conciencia, y eso es exactamente el punto: las ideas nihilistas, cuando se interiorizan completamente, destruyen la posibilidad del yo.</p>
+                                <p>Este capítulo es la respuesta de Dostoyevski al racionalismo extremo: no lo refuta con argumentos, lo muestra en su consecuencia psicológica más oscura.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Libro XII — Un error judicial</div>
+                                <h3>El juicio de Dmitri</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">Crítica al sistema de justicia</span>
+                                <p>El juicio de Dmitri es uno de los retratos más penetrantes del sistema judicial en la literatura. La defensa y la acusación presentan argumentos brillantes y convincentes, pero ambos construyen narraciones ficticias sobre un hecho que ninguno comprende del todo.</p>
+                                <p>El veredicto incorrecto no es producto de la maldad sino de las limitaciones inherentes a cualquier sistema humano para conocer la verdad. Dostoyevski, que asistió a muchos juicios como periodista, convierte esta sección en una crítica demoledora de la fe ciega en la racionalidad jurídica.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Epílogo</div>
+                                <h3>El discurso de Alyosha en la piedra</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La respuesta final de Dostoyevski</span>
+                                <p>Tras el entierro de Ilyusha, el niño del pueblo que muere de tuberculosis, Alyosha reúne a los niños amigos del fallecido y les habla. No les da consuelo fácil ni promesas vacías: les pide que recuerden este momento de dolor compartido.</p>
+                                <p>"Deben saber que no hay nada más elevado, ni más fuerte, ni más sano, ni más útil para la vida futura que un buen recuerdo, especialmente un recuerdo de la infancia." Las últimas palabras de la novela son un grito: «¡Karamázov!», lanzado por los niños. Dostoyevski termina la novela más oscura sobre el alma humana con un acto de fe en la infancia y la memoria.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- TAB: SIMBOLISMOS -->
+                <div id="tab-simbolismos" class="tab-panel">
+                    <div class="simbolismo-grid">
+
+                        <div class="simbolismo-card">
+                            <div class="icono"></div>
+                            <h3>Los tres hermanos como alma rusa</h3>
+                            <p>Dmitri (las pasiones), Ivan (la razón) y Alyosha (el espíritu) son las tres partes del alma humana según la tradición filosófica. Dostoyevski los usa para mostrar que ninguna de las tres, por sí sola, es suficiente para vivir bien. Solo Alyosha, que integra las tres en lugar de rechazar las otras dos, logra mantenerse íntegro.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono"></div>
+                            <h3>Los 3.000 rublos</h3>
+                            <p>La suma de dinero que Dmitri cree que su padre le debe y que Katerina le dio en confianza se convierte en el símbolo de la deshonra, la culpa y la obsesión. El dinero en Dostoyevski no es nunca simplemente dinero: es la medida de hasta dónde puede caer un ser humano. Los 3.000 rublos son la distancia entre Dmitri y su propio honor.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono"></div>
+                            <h3>El sufrimiento de los niños inocentes</h3>
+                            <p>Ivan construye su argumento más poderoso contra Dios sobre el sufrimiento de los niños, seres que no pueden haber pecado. El pequeño Ilyusha, que muere al final de la novela, concretiza ese argumento. La respuesta de Dostoyevski no es teológica sino narrativa: el sufrimiento de Ilyusha genera el momento más luminoso del libro, el discurso final de Alyosha.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono"></div>
+                            <h3>La semilla y la tierra</h3>
+                            <p>El epígrafe de la novela es Juan 12:24: "Si el grano de trigo no cae en la tierra y muere, solo queda; pero si muere, da mucho fruto." El tema de la muerte como condición para la vida nueva atraviesa cada arco narrativo: Zosima muere y transforma a Alyosha; Ilyusha muere y transforma a los niños. La resurrección no es metáfora sino estructura narrativa.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono"></div>
+                            <h3>La reverencia de Zosima</h3>
+                            <p>Al conocer a Dmitri, el Padre Zosima se inclina hasta el suelo ante él. Nadie entiende el gesto en ese momento. Más tarde se interpreta como que Zosima vio el gran sufrimiento que le esperaba a Dmitri. La reverencia ante el sufrimiento ajeno es uno de los gestos más poderosos de la novela: no la lástima, sino la veneración del dolor como algo sagrado.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono"></div>
+                            <h3>El diablo vulgar de Ivan</h3>
+                            <p>El demonio que se le aparece a Ivan no es el Lucifer grandioso del romanticismo sino un hombre aburrido y mediocre. Dostoyevski destruye la romantización del mal: el nihilismo no es una postura heroica sino una banalidad que destruye lentamente desde adentro. La visión anticipa el concepto de «banalidad del mal» que Hannah Arendt formularía décadas después.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono"></div>
+                            <h3>La ventana de Fiódor</h3>
+                            <p>La noche del asesinato, la señal convenida entre Fiódor y Grushenka era golpear la ventana de cierta manera. Smerdyákov conocía esa señal. La ventana es el símbolo de la traición que opera desde el interior de la casa familiar: el crimen no viene de afuera sino de las semillas plantadas dentro, en las conversaciones entre Ivan y Smerdyákov.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono"></div>
+                            <h3>Fe vs. Razón — La gran dialéctica</h3>
+                            <p>Dostoyevski no presenta la fe como la respuesta fácil ni la razón como el enemigo. Ivan tiene los mejores argumentos de la novela, y Dostoyevski no los desmonta con lógica. Los desmonta mostrando sus consecuencias humanas. La fe de Alyosha y Zosima no es irracional: es trans-racional. Existe en un plano donde los argumentos de Ivan son verdaderos y, sin embargo, insuficientes.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB: FRASES -->
+                <div id="tab-frases" class="tab-panel">
+                    <div class="frases-lista">
+
+                        <div class="frase-card">
+                            <blockquote>El misterio de la existencia humana no está en mantenerse vivo, sino en encontrar algo por lo que vivir.</blockquote>
+                            <div class="frase-origen">El Gran Inquisidor · Libro V</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Ama la vida más que el sentido de la vida.</blockquote>
+                            <div class="frase-origen">Alyosha Karamázov</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Si Dios no existe, todo está permitido.</blockquote>
+                            <div class="frase-origen">Ivan Karamázov · La idea que Smerdyákov convirtió en crimen</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>No hay nada más elevado, ni más fuerte, ni más sano, ni más útil para la vida futura que un buen recuerdo, especialmente un recuerdo de la infancia.</blockquote>
+                            <div class="frase-origen">Alyosha Karamázov · Discurso final · Epílogo</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Ama a los hombres incluso en su pecado, pues ese amor ya se parece al amor divino y es la cumbre del amor en la tierra.</blockquote>
+                            <div class="frase-origen">El Padre Zosima · Libro VI</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Todos somos responsables ante todos y por todo, y yo más que nadie.</blockquote>
+                            <div class="frase-origen">El Padre Zosima · Enseñanza central de la novela</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>La belleza salvará al mundo.</blockquote>
+                            <div class="frase-origen">Citada en Libro III · Originalmente de El Idiota</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>No temas nada nunca, ni aunque temas. No te preocupes tampoco. Con tal de que tu arrepentimiento sea sincero y haya amor en ti, lo habrás superado todo.</blockquote>
+                            <div class="frase-origen">El Padre Zosima a Alyosha</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><!-- /tabs-container -->
+
+        </div><!-- /libro-main -->
+    </main>
+
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="../index.html">Principal</a></p>
+                <p><a href="libros.html">Libros</a></p>
+                <p><a href="../historia.html">Historia</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Ayuda</h1>
+                <p><a href="../contacto.html">Contacto</a></p>
+                <p><a href="../creditos.html">Créditos</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Honduras, Cortés</address>
+                <small>&copy; Darién Calderón 2026</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+        <script src="../js/libros.js"></script>
+    </footer>
+</body>
+</html>

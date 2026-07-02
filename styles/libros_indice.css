@@ -1,0 +1,157 @@
+/* ── INTRO ── */
+#libros-intro {
+    text-align: center;
+    padding: 48px 0 40px;
+}
+#libros-intro h2 {
+    font: bold 40px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 12px;
+}
+#libros-intro p {
+    font: 17px/1.7 "PT Serif", serif;
+    color: #5a4232;
+    max-width: 560px;
+    margin: 0 auto;
+}
+.separador {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #8B5A2B, transparent);
+    margin: 0 auto 40px;
+    max-width: 400px;
+    border-radius: 2px;
+}
+
+/* ── GRID ── */
+#libros-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 760px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+/* ── CARD ── */
+.libro-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 2/3;
+    background: radial-gradient(ellipse at center, #ead9c2 0%, #c4a67a 100%);
+    box-shadow: 4px 8px 22px rgba(43,27,14,0.32);
+    transition: box-shadow 0.35s ease, transform 0.35s ease;
+    text-decoration: none;
+    display: block;
+}
+.libro-card:hover {
+    box-shadow: 8px 16px 36px rgba(43,27,14,0.55);
+    transform: translateY(-6px);
+}
+
+/* imagen de portada */
+.libro-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: sepia(10%) contrast(105%);
+    transition: transform 0.45s ease, opacity 0.45s ease;
+}
+.libro-card:hover img {
+    transform: scale(1.06);
+    opacity: 0.5;
+}
+
+/* capa oscura sobre la imagen */
+.libro-card .velo {
+    position: absolute;
+    inset: 0;
+    background: rgba(43,27,14,0);
+    transition: background 0.4s ease;
+    z-index: 1;
+}
+.libro-card:hover .velo {
+    background: rgba(43,27,14,0.2);
+}
+
+/* overlay que sube desde abajo */
+.libro-card .slide-overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 36px 24px 26px;
+    background: linear-gradient(to top,
+        rgba(27,16,8,0.98) 55%,
+        rgba(27,16,8,0.7) 80%,
+        transparent 100%
+    );
+    transform: translateY(100%);
+    transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+    box-sizing: border-box;
+}
+.libro-card:hover .slide-overlay {
+    transform: translateY(0);
+}
+
+/* textos dentro del overlay */
+.slide-overlay .anio {
+    font: bold 11px "PT Sans", sans-serif;
+    color: #c4a67a;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+.slide-overlay .titulo {
+    font: bold 22px "Playfair Display", serif;
+    color: #F4ECE0;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.slide-overlay .desc {
+    font: 14px/1.6 "PT Serif", serif;
+    color: #CBB89A;
+    margin-bottom: 18px;
+}
+.slide-overlay .leer-mas {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font: bold 15px "PT Sans", sans-serif;
+    color: #F4ECE0;
+    background: rgba(139,90,43,0.75);
+    border: 1px solid rgba(196,166,122,0.5);
+    padding: 9px 20px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+.libro-card:hover .leer-mas {
+    background: rgba(139,90,43,1);
+    border-color: rgba(196,166,122,0.9);
+}
+.slide-overlay .leer-mas::after {
+    content: '→';
+    font-size: 17px;
+}
+
+/* animación de entrada */
+#libros-intro, #libros-grid {
+    opacity: 0;
+    animation: aparecer 0.6s ease-out forwards;
+}
+#libros-intro  { animation-delay: 0.3s; }
+#libros-grid   { animation-delay: 0.5s; }
+
+@media (max-width: 980px) {
+    #libros-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}

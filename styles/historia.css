@@ -1,0 +1,208 @@
+/* ── INTRO ── */
+#historia-intro {
+    text-align: center;
+    padding: 48px 0 40px;
+}
+#historia-intro h2 {
+    font: bold 40px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 12px;
+}
+#historia-intro p {
+    font: 17px/1.7 "PT Serif", serif;
+    color: #5a4232;
+    max-width: 620px;
+    margin: 0 auto;
+}
+.separador {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #8B5A2B, transparent);
+    margin: 0 auto 40px;
+    max-width: 400px;
+    border-radius: 2px;
+}
+
+#historia-main {
+    padding: 0 20px 50px 20px;
+}
+
+.titulo-seccion {
+    font: bold 30px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+/* ── LÍNEA DE TIEMPO (flexbox) ───────────────────────── */
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+.hito {
+    display: flex;
+    gap: 20px;
+}
+
+/* Riel vertical: punto + línea conectora, todo con flexbox */
+.hito-riel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20px;
+    flex-shrink: 0;
+}
+.hito-punto {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #8B5A2B;
+    border: 3px solid #3B2A1F;
+    flex-shrink: 0;
+    transition: background 0.2s, transform 0.2s;
+}
+.hito.abierto .hito-punto {
+    background: #3B2A1F;
+    transform: scale(1.15);
+}
+.hito-conector {
+    width: 2px;
+    flex: 1;
+    background: #CBB89A;
+    margin: 4px 0;
+}
+.hito:last-child .hito-conector {
+    display: none;
+}
+
+.hito-contenido {
+    flex: 1;
+    min-width: 0;
+    padding-bottom: 26px;
+}
+.hito-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #F4ECE0;
+    padding: 14px 18px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    user-select: none;
+}
+.hito-cabecera:hover {
+    background: #EAD9C2;
+}
+.hito-titulo-linea .hito-anio {
+    font: bold 13px "PT Sans", sans-serif;
+    color: #8B5A2B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+.hito-titulo-linea h3 {
+    font: bold 18px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-top: 2px;
+}
+.hito-cabecera .flecha {
+    font-size: 18px;
+    color: #8B5A2B;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+.hito.abierto .flecha {
+    transform: rotate(180deg);
+}
+.hito-cuerpo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+.hito-cuerpo-inner {
+    padding: 16px 18px 4px 18px;
+}
+.hito-cuerpo-inner p {
+    font: 15px/1.7 "PT Serif", serif;
+    color: #2B1B0E;
+    text-align: justify;
+}
+
+/* ── INFLUENCIAS (flexbox) ──────────────────────────── */
+.influencias-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.influencia-card {
+    flex: 1 1 260px;
+    background: #F4ECE0;
+    border-left: 4px solid #8B5A2B;
+    border-radius: 0 8px 8px 0;
+    padding: 18px 20px;
+    transition: border-color 0.2s, background 0.2s;
+}
+.influencia-card:hover {
+    background: #EAD9C2;
+    border-color: #3B2A1F;
+}
+.influencia-card h3 {
+    font: bold 17px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 8px;
+}
+.influencia-card p {
+    font: 14px/1.6 "PT Serif", serif;
+    color: #2B1B0E;
+}
+
+/* ── CURIOSIDADES (flexbox) ─────────────────────────── */
+.curiosidades-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.curiosidad-card {
+    flex: 1 1 45%;
+    background: #FFFDF9;
+    border-top: 4px solid #8B5A2B;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(59, 42, 31, 0.08);
+}
+.curiosidad-card .icono {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+.curiosidad-card h3 {
+    font: bold 16px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 8px;
+}
+.curiosidad-card p {
+    font: 14px/1.6 "PT Serif", serif;
+    color: #2B1B0E;
+}
+
+/* ── ANIMACIÓN (reutiliza @keyframes aparecer de style.css) ── */
+#historia-intro,
+.timeline,
+.influencias-lista,
+.curiosidades-lista {
+    opacity: 0;
+    animation: aparecer 0.6s ease-out forwards;
+}
+#historia-intro       { animation-delay: 0.3s; }
+.timeline             { animation-delay: 0.45s; }
+.influencias-lista     { animation-delay: 0.6s; }
+.curiosidades-lista    { animation-delay: 0.6s; }
+
+@media (max-width: 980px) {
+    .influencias-lista {
+        flex-direction: column;
+    }
+    .curiosidad-card {
+        flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,451 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+body{
+    background-color: #F4ECE0;
+}
+#cabeceralogo {
+    width: 96%;
+    height: 150px;
+    padding: 0% 2%;
+    background-color: #3B2A1F;
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Crect width='20' height='20' fill='%233B2A1F'/%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%23cbb59a' fill-opacity='0.15'/%3E%3Ccircle cx='0' cy='0' r='1' fill='%23cbb59a' fill-opacity='0.08'/%3E%3Ccircle cx='20' cy='0' r='1' fill='%23cbb59a' fill-opacity='0.08'/%3E%3Ccircle cx='0' cy='20' r='1' fill='%23cbb59a' fill-opacity='0.08'/%3E%3Ccircle cx='20' cy='20' r='1' fill='%23cbb59a' fill-opacity='0.08'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23a)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+#cabeceralogo > div {
+    width: 960px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+#cabeceralogo h1 {
+    font: bold 54px 'Playfair Display', sans-serif;
+    color: #FFFFFF;
+    }
+#menuprincipal {
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background-color: #8B5A2B;
+    border-top: 5px solid  #6E4720;
+    border-bottom: 5px solid  #6E4720;
+    border-radius: 10px;
+    position: relative;
+    z-index: 50;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cbb59a' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+}
+#menuprincipal > div {
+    width: 960px;
+    margin: 0px auto;
+}
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+    }
+
+#menuprincipal li:hover {
+    background-color: #6E4720;
+    }
+main {
+    width: 96%;
+    padding: 2% 2%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cbb59a' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* Este es un patrón sutil muy bonito. Si prefieres usar una imagen, comenta estas dos líneas y descomenta la de abajo */
+    /* background-image: url('imagenes/tu_textura_favorita.jpg'); */
+    background-repeat: repeat;
+    }
+main > div {
+    width: 960px;
+    margin: 0px auto;
+    }
+#articulosprincipales {
+    float: left;
+    width: 620px;
+    padding-top: 30px;
+    background-color:#FFFDF9;
+    border-radius: 10px;
+}
+#articulosprincipales{
+    padding: 0;
+}
+
+#infoadicional {
+    float: right;
+    width: 280px;
+    padding: 20px;
+    background-color: #EAD9C2;
+    border-radius: 10px;
+    margin: 0;
+}
+#infoadicional h1 {
+    font: bold 18px "PT Sans",sans-serif;
+    color: #333333;
+    margin-bottom: 15px;
+}
+#infoadicional ul{
+    margin-left:40px ;
+    font: 15px "PT Serif",sans-serif;;
+}
+.recuperar {
+    clear: both;
+}
+article {
+    position: relative;
+    padding: 20px 20px 20px 40px;
+    }
+article time {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    width: 80px;
+    padding: 15px 5px;
+    background-color:  #3B2A1F;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 5px;
+    }
+.numerodia {
+    font: bold 36px "PT Serif", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    }
+.nombredia {
+    font: 12px "PT Serif", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    }
+article h1 {
+    margin-bottom: 5px;
+    font: bold 30px "PT Sans", sans-serif;
+    color: #2B1B0E;
+    }
+article p {
+    font: 18px Georgia, 'PT Serif',sans-serif;
+    color: #2B1B0E;
+    }
+figure {
+    margin: 10px 0px;
+    }
+figure img {
+    width: 150px;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+#pielogo {
+    width: 96%;
+    padding: 2%;
+    background-color: #3B2A1F;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Crect width='20' height='20' fill='%233B2A1F'/%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%23cbb59a' fill-opacity='0.15'/%3E%3Ccircle cx='0' cy='0' r='1' fill='%23cbb59a' fill-opacity='0.08'/%3E%3Ccircle cx='20' cy='0' r='1' fill='%23cbb59a' fill-opacity='0.08'/%3E%3Ccircle cx='0' cy='20' r='1' fill='%23cbb59a' fill-opacity='0.08'/%3E%3Ccircle cx='20' cy='20' r='1' fill='%23cbb59a' fill-opacity='0.08'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23a)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    }
+#pielogo > div {
+    width: 960px;
+    margin: 0px auto;
+    background-color: #8B5A2B;
+    border-radius: 10px;
+    border: 5px solid  #6E4720;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cbb59a' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    }
+.seccionpie {
+    float: left;
+    width: 270px;
+    padding: 25px;
+    }
+.seccionpie h1 {
+    font: bold 20px "PT Sans",sans-serif;
+        }
+.seccionpie p {
+    margin-top: 5px;
+        }
+.seccionpie a {
+    font: bold 16px "PT Serif", sans-serif;
+    color: #F4ECE0;
+    text-decoration: none;
+        }
+.seccionpie {
+    float: left;
+    width: 27.33%;
+    padding: 3%;
+    font: bold 16px "PT Serif",sans-serif;
+    color: #F4ECE0;
+    }
+#listamenu > li {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+    }
+#listamenu li > ul {
+    display: none;
+    position: absolute;
+    background-color: #8B5A2B;
+    box-shadow: 3px 3px 5px #6E4720;
+    border-radius:  5px;
+    list-style: none;
+    z-index: 1000;
+    top: 50px;
+    left: 0px;
+    }
+#listamenu li > ul > li {
+    width: 140px;
+    height: auto;
+    min-height: 50px;
+    padding: 10px 8px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.3;
+    margin: auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cbb59a' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    }
+#listamenu li:hover ul {
+    display: block;
+    }
+#listamenu a {
+    font: bold 18px "PT Sans", sans-serif;
+    color: #F4ECE0;
+    text-decoration: none;
+    }
+#menuprincipal li:hover {
+    background-color: #6E4720;
+    border-radius: 5px;
+    }
+
+/* Estilos mejorados para el retrato con efecto hover */
+.retrato-overlay {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Asegura que todo quede dentro del círculo/borde */
+    cursor: pointer; 
+    /* Cambia el cursor a una mano para indicar que es interactivo */
+    transition: box-shadow 0.3s ease;
+    /* Transición suave para un efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.retrato-overlay:hover {
+    /* Se agranda un poco al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.retrato-overlay img {
+    display: block;
+    width: 100%;
+    filter: sepia(30%) contrast(105%) brightness(0.95);
+    /* Un filtro que le da un tono más antiguo y clásico */
+    transition: transform 0.4s ease, opacity 0.5s ease;
+
+    /* Para que la imagen se desvanezca suavemente */
+}
+
+/* Esta es la clave del efecto: la "capa" que aparece encima */
+.retrato-overlay .overlay-texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ocupa todo el contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* ¡ESTA ES LA CLAVE! Centra horizontalmente */
+    text-align: center;
+    /* Por si acaso, alineación del texto */
+    padding: 20px;
+    background-color: rgba(59, 42, 31, 0.75);
+    background-image: url('imagenes/dosto_fondo_textura.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #F4ECE0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 8px;
+    box-sizing: border-box;
+    /* Asegura que el padding no desborde */
+}
+
+/* Al pasar el mouse sobre el contenedor, mostramos la capa */
+.retrato-overlay:hover .overlay-texto {
+    opacity: 1;
+
+    /* Aparece */
+}
+
+/* Al pasar el mouse, la imagen de fondo se vuelve un poco más oscura para resaltar la frase */
+.retrato-overlay:hover img {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+
+.retrato-overlay .overlay-texto span {
+    display: block;
+    font: bold 17px "Playfair Display", serif;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* Sombra para mejor legibilidad */
+}
+
+.retrato-overlay .overlay-texto .cita-autor {
+    font: 14px "PT Serif", serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.retrato-overlay .overlay-texto small {
+    font: 12px "PT Serif", serif;
+    opacity: 0.7;
+    margin-top: 15px;
+}
+
+.parrafo_texto {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;  /* antes: center — con textos largos, esto es mejor */
+    text-align: justify;
+}
+
+.parrafo_texto p {
+    flex: 1;          /* el texto toma el espacio disponible */
+    min-width: 0;     /* evita que el texto desborde el flex container */
+}
+
+.parrafo_texto figure {
+    flex-shrink: 0;   /* la imagen nunca se encoge ni baja de fila */
+    margin: 0;
+}
+
+/* Y la imagen dentro del artículo (no la del aside) */
+.parrafo_texto figure img {
+    width: 150px;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Hover para las imágenes del main (dentro de .parrafo_texto) */
+.parrafo_texto figure img:hover {
+    transform: scale(1.06);
+    box-shadow: 4px 4px 12px rgba(43, 27, 14, 0.35);
+}
+
+.seccionpie h1 {
+    color: #F4ECE0;
+}
+
+.seccionpie address,
+.seccionpie small {
+    color: #EAD9C2;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#cabeceralogo,
+#menuprincipal,
+#articulosprincipales article,
+#infoadicional,
+#pielogo {
+    opacity: 0;
+    animation: aparecer 0.6s ease-out forwards;
+}
+
+#cabeceralogo { animation-delay: 0s; }
+#menuprincipal { animation-delay: 0.15s; }
+#articulosprincipales article:nth-of-type(1) { animation-delay: 0.3s; }
+#articulosprincipales article:nth-of-type(2) { animation-delay: 0.45s; }
+#infoadicional { animation-delay: 0.6s; }
+#pielogo { animation-delay: 0.75s; }
+
+@media (max-width: 980px) {
+
+    /* ── Contenedores: de ancho fijo a ancho fluido ── */
+    #cabeceralogo > div,
+    #menuprincipal > div,
+    main > div,
+    #pielogo > div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ── Header: título más pequeño ── */
+    #cabeceralogo h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* ── Menú: permitir que los items se envuelvan ── */
+    #menuprincipal {
+        height: auto;
+        padding: 8px 2%;
+    }
+    #menuprincipal li {
+        padding: 10px 8px 8px 8px;
+    }
+
+    /* ── Index: las dos columnas se apilan ── */
+    #articulosprincipales {
+        float: none;
+        width: 100%;
+    }
+    #infoadicional {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+
+    /* ── Artículos: ocultar la fecha lateral (se sale del contenedor) ── */
+    article time {
+        display: none;
+    }
+    article {
+        padding: 16px;
+    }
+
+    /* ── Footer: secciones en columna ── */
+    .seccionpie {
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

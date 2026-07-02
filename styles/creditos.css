@@ -1,0 +1,235 @@
+#creditos-main {
+    padding: 0 20px 50px 20px;
+}
+
+.separador {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #8B5A2B, transparent);
+    margin: 0 auto 40px;
+    max-width: 400px;
+    border-radius: 2px;
+}
+
+
+
+.logo {
+    margin: auto;
+    margin-bottom: 5px;
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 2px 20px 5px #000;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Segunda imagen */
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../imagenes/logo2.jpeg") center/cover no-repeat;
+    border-radius: 100px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Marco decorativo */
+.logo::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 100px;
+    border: 5px solid #000;
+    transition: border-color 0.6s ease;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.logo:hover img {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.logo:hover::before {
+    opacity: 1;
+}
+
+
+/* ── PORTADA ACADÉMICA ──────────────────────────────── */
+#portada-academica {
+    background: #FFFDF9;
+    border: 2px solid #8B5A2B;
+    border-radius: 10px;
+    padding: 5px 50px 48px 50px;
+    margin-top: 40px;
+    box-shadow: 4px 8px 20px rgba(43, 27, 14, 0.12);
+    text-align: center;
+}
+#portada-academica .instituto {
+    font: bold 14px "PT Sans", sans-serif;
+    color: #8B5A2B;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+#portada-academica .instituto .valor-editable {
+    display: block;
+    font: bold 22px "Playfair Display", serif;
+    color: #2B1B0E;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-top: 4px;
+}
+#portada-academica .titulo-proyecto {
+    font: bold 34px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin: 26px 0 6px;
+}
+#portada-academica .subtitulo-proyecto {
+    font: italic 16px "PT Serif", serif;
+    color: #8B5A2B;
+    margin-bottom: 36px;
+}
+
+.ficha-academica {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    text-align: left;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.ficha-academica .dato {
+    flex: 1 1 260px;
+    background: #F4ECE0;
+    border-left: 4px solid #8B5A2B;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+}
+.ficha-academica .nombre{
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+.ficha-academica .dato .etiqueta {
+    display: block;
+    font: bold 12px "PT Sans", sans-serif;
+    color: #8B5A2B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+.ficha-academica .dato .valor-editable {
+    font: 16px "PT Serif", serif;
+    color: #2B1B0E;
+}
+
+/* Marca visual para que sea obvio qué hay que reemplazar */
+.valor-editable {
+    border-bottom: 1px dashed #CBB89A;
+}
+
+/* ── AGRADECIMIENTOS ─────────────────────────────────── */
+#agradecimientos {
+    margin-top: 50px;
+    text-align: center;
+}
+#agradecimientos h2 {
+    font: bold 28px "Playfair Display", serif;
+    color: #2B1B0E;
+    margin-bottom: 30px;
+}
+
+.caja-agradecimientos {
+    background: #3B2A1F;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 4px 8px 20px rgba(43, 27, 14, 0.25);
+    max-height: 320px;
+    overflow-y: auto;
+    /* scrollbar con colores que combinan */
+    scrollbar-width: thin;
+    scrollbar-color: #8B5A2B #2B1B0E;
+}
+/* para Chrome/Safari */
+.caja-agradecimientos::-webkit-scrollbar {
+    width: 6px;
+}
+.caja-agradecimientos::-webkit-scrollbar-track {
+    background: #2B1B0E;
+    border-radius: 3px;
+}
+.caja-agradecimientos::-webkit-scrollbar-thumb {
+    background: #8B5A2B;
+    border-radius: 3px;
+}
+
+.caja-agradecimientos ol {
+    padding-left: 24px;
+}
+.caja-agradecimientos li {
+    font: 15px/2 "PT Serif", serif;
+    color: #F4ECE0;
+    border-bottom: 1px solid rgba(244, 236, 224, 0.08);
+    padding: 2px 0;
+}
+.caja-agradecimientos li:last-child {
+    border-bottom: none;
+}
+
+.estado-vacio {
+    font: italic 14px "PT Serif", serif;
+    color: #CBB89A;
+}
+.caja-agradecimientos .leyenda {
+    font: italic 16px "PT Serif", serif;
+    color: #EAD9C2;
+    margin-bottom: 24px;
+}
+
+.lista-nombres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.lista-nombres .chip-nombre {
+    background: #8B5A2B;
+    color: #F4ECE0;
+    font: bold 14px "PT Sans", sans-serif;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #6E4720;
+}
+
+.lista-nombres .estado-vacio {
+    font: italic 14px "PT Serif", serif;
+    color: #CBB89A;
+    width: 100%;
+}
+
+/* ── ANIMACIÓN (reutiliza @keyframes aparecer de style.css) ── */
+#portada-academica,
+#agradecimientos {
+    opacity: 0;
+    animation: aparecer 0.6s ease-out forwards;
+}
+#portada-academica { animation-delay: 0.3s; }
+#agradecimientos    { animation-delay: 0.5s; }

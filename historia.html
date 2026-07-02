@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Historia — Dostoyevski</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La vida de Fiódor Dostoyevski: línea de tiempo, influencias y curiosidades">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/historia.css">
+    <link rel="icon" type="image/png" href="/imagenes/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/imagenes/favicon.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <h1>Fiódor Mijáilovich Dostoyevski</h1>
+        </div>
+    </header>
+
+    <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="libros/libros.html">Libros</a>
+                    <ul>
+                        <li><a href="libros/LHK.html">Los Hermanos Karamázov</a></li>
+                        <li><a href="libros/los_demonios.html">Los Demonios</a></li>
+                        <li><a href="libros/el_idiota.html">El Idiota</a></li>
+                        <li><a href="libros/cyc.html">Crimen y Castigo</a></li>
+                    </ul>
+                </li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="creditos"><a href="creditos.html">Créditos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <div id="historia-main">
+
+                <!-- ── INTRO ── -->
+                <div id="historia-intro">
+                    <h2>La vida de Dostoyevski</h2>
+                    <p>Una biografía marcada por la pobreza, un simulacro de fusilamiento, años de trabajos forzados en Siberia y una lucha constante contra el juego. Todo eso terminó forjando al escritor que exploró como nadie el alma humana.</p>
+                </div>
+
+                <div class="separador"></div>
+
+                <!-- ── LÍNEA DE TIEMPO ── -->
+                <section id="linea-tiempo">
+                    <h2 class="titulo-seccion">Línea de tiempo</h2>
+
+                    <div class="timeline">
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1821</span>
+                                        <h3>Nacimiento en Moscú</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Fiódor Dostoyevski nace el 11 de noviembre de 1821 en Moscú. Su padre era médico del Hospital Mariinski para pobres, y la familia vivía en las dependencias del propio hospital, en contacto directo con la miseria que después retrataría en sus novelas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1837</span>
+                                        <h3>Muere su madre y muere Pushkin</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>La muerte de su madre coincide con la de Aleksandr Pushkin, el escritor que Dostoyevski consideraba el padre de la literatura rusa. Ese mismo año es enviado a estudiar Ingeniería Militar en San Petersburgo, una carrera que nunca le interesó realmente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1846</span>
+                                        <h3>Debuta con «Pobres gentes»</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Su primera novela es un éxito inmediato: el influyente crítico Belinski la aclama como el nacimiento de un nuevo gran escritor ruso. A los 24 años, Dostoyevski se convierte de la noche a la mañana en una celebridad literaria.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1849</span>
+                                        <h3>Arresto y simulacro de fusilamiento</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Es arrestado por participar en el Círculo Petrashevski, un grupo de discusión sobre ideas socialistas prohibidas. Condenado a muerte, es llevado ante el pelotón de fusilamiento; solo en el último instante se lee el indulto del zar, que conmuta la pena por trabajos forzados. La experiencia lo marca para siempre.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1850–1854</span>
+                                        <h3>Trabajos forzados en Siberia</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Cumple cuatro años en un campo de prisioneros en Omsk, encadenado junto a asesinos y ladrones comunes. El único libro permitido era el Nuevo Testamento, que leyó una y otra vez. De esta experiencia nace su reencuentro con la fe cristiana y el material para «Memorias de la casa de los muertos».</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1864</span>
+                                        <h3>«Memorias del subsuelo»</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Publica esta breve novela sobre un hombre resentido y aislado que rechaza la razón y el progreso. Muchos filósofos y críticos la consideran una de las obras fundacionales del existencialismo, décadas antes de que ese término existiera.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1866</span>
+                                        <h3>«Crimen y Castigo» y «El Jugador»</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Publica «Crimen y Castigo» por entregas. Ese mismo año, atrapado por un contrato leonino que lo obligaba a entregar una novela nueva en un mes o perder los derechos de todas sus obras, dicta «El Jugador» en 26 días a su joven taquígrafa, Anna Grigórievna Snítkina.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1867</span>
+                                        <h3>Matrimonio con Anna Snítkina</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Se casa con Anna, quien se convierte no solo en su esposa sino en su editora y administradora financiera. Fue ella quien lo ayudó a superar su adicción al juego y a estabilizar por fin su vida económica.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                                <div class="hito-conector"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1880</span>
+                                        <h3>«Los Hermanos Karamázov» y el discurso sobre Pushkin</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Publica su última y más grande novela. Ese mismo año pronuncia un discurso en la inauguración del monumento a Pushkin en Moscú que provoca una ovación tan intensa que, según los testigos, desconocidos lloraban y se abrazaban entre sí.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hito" onclick="toggleHito(this)">
+                            <div class="hito-riel">
+                                <div class="hito-punto"></div>
+                            </div>
+                            <div class="hito-contenido">
+                                <div class="hito-cabecera">
+                                    <div class="hito-titulo-linea">
+                                        <span class="hito-anio">1881</span>
+                                        <h3>Muerte en San Petersburgo</h3>
+                                    </div>
+                                    <span class="flecha">▾</span>
+                                </div>
+                                <div class="hito-cuerpo">
+                                    <div class="hito-cuerpo-inner">
+                                        <p>Fallece el 28 de enero (9 de febrero en el calendario gregoriano) a los 59 años. Miles de personas asisten a su funeral en San Petersburgo, un homenaje enorme para un escritor que había pasado buena parte de su vida al borde de la pobreza.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="separador"></div>
+
+                <!-- ── INFLUENCIAS ── -->
+                <section id="influencias">
+                    <h2 class="titulo-seccion">Influencias</h2>
+                    <div class="influencias-lista">
+
+                        <div class="influencia-card">
+                            <h3>Aleksandr Pushkin</h3>
+                            <p>El gran referente de toda la literatura rusa. Dostoyevski lo consideró siempre un modelo insuperable, y su discurso de 1880 en su honor fue uno de los momentos más emotivos de su vida pública.</p>
+                        </div>
+
+                        <div class="influencia-card">
+                            <h3>Nikolái Gógol</h3>
+                            <p>Sus primeras obras, centradas en pequeños funcionarios y personajes humillados, están en deuda directa con Gógol, sobre todo con su cuento «El capote».</p>
+                        </div>
+
+                        <div class="influencia-card">
+                            <h3>El Nuevo Testamento</h3>
+                            <p>Fue el único libro que pudo leer durante sus cuatro años de trabajos forzados en Siberia. Esa lectura repetida moldeó la visión cristiana ortodoxa que sostiene toda su obra posterior.</p>
+                        </div>
+
+                        <div class="influencia-card">
+                            <h3>El Círculo Petrashevski</h3>
+                            <p>El grupo de intelectuales socialistas al que perteneció en su juventud, y cuya represión casi le costó la vida, terminó siendo tan influyente como los ideales que después rechazó.</p>
+                        </div>
+
+                        <div class="influencia-card">
+                            <h3>Honoré de Balzac</h3>
+                            <p>Dostoyevski tradujo «Eugenia Grandet» al ruso antes de publicar su primera novela propia. El realismo psicológico de Balzac dejó huella en su forma de construir personajes.</p>
+                        </div>
+
+                        <div class="influencia-card">
+                            <h3>Friedrich Schiller</h3>
+                            <p>El idealismo romántico de Schiller aparece citado explícitamente por varios de sus personajes, especialmente Dmitri Karamázov, que se identifica con sus versos sobre el sufrimiento y la belleza.</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="separador"></div>
+
+                <!-- ── CURIOSIDADES ── -->
+                <section id="curiosidades">
+                    <h2 class="titulo-seccion">Curiosidades</h2>
+                    <div class="curiosidades-lista">
+
+                        <div class="curiosidad-card">
+                            <div class="icono"></div>
+                            <h3>El indulto de último minuto</h3>
+                            <p>Frente al pelotón de fusilamiento, ya con los ojos vendados, Dostoyevski escuchó llegar al jinete que traía el indulto real. Años después usó esa misma escena, casi sin cambiarla, en el relato del Príncipe Myshkin en «El Idiota».</p>
+                        </div>
+
+                        <div class="curiosidad-card">
+                            <div class="icono"></div>
+                            <h3>Una adicción al juego real</h3>
+                            <p>Durante años perdió sumas enormes en las mesas de ruleta de los casinos europeos. Su novela «El Jugador» no es solo ficción: nació directamente de su propia ludopatía.</p>
+                        </div>
+
+                        <div class="curiosidad-card">
+                            <div class="icono"></div>
+                            <h3>Escrita contra el reloj</h3>
+                            <p>«El Jugador» completa se dictó en apenas 26 días, a contrarreloj, para no perder los derechos de toda su obra frente a un editor abusivo. La taquígrafa que la transcribió, Anna, se convertiría poco después en su esposa.</p>
+                        </div>
+
+                        <div class="curiosidad-card">
+                            <div class="icono"></div>
+                            <h3>Epilepsia y literatura</h3>
+                            <p>Sufrió convulsiones epilépticas durante buena parte de su vida adulta. Lejos de ocultarlo, trasladó esa experiencia a personajes como el Príncipe Myshkin y Smerdyakov, describiendo el aura previa a las crisis con un detalle casi clínico.</p>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="index.html">Principal</a></p>
+                <p><a href="libros/libros.html">Libros</a></p>
+                <p><a href="historia.html">Historia</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Ayuda</h1>
+                <p><a href="contacto.html">Contacto</a></p>
+                <p><a href="creditos.html">Créditos</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Honduras, Cortés</address>
+                <small>&copy; Darién Calderón 2026</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+        <script src="./js/historia.js"></script>
+    </footer>
+</body>
+</html>

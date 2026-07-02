@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>El Idiota — Dostoyevski</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Análisis completo de El Idiota de Fiódor Dostoyevski">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/libros_plantilla.css">
+    <link rel="icon" type="image/png" href="../imagenes/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../imagenes/favicon.png">
+</head>
+<body>
+
+    <header id="cabeceralogo">
+        <div>
+            <h1>Fiódor Mijáilovich Dostoyevski</h1>
+        </div>
+    </header>
+
+    <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="libros.html">Libros</a>
+                    <ul>
+                        <li><a href="LHK.html">Los Hermanos Karamázov</a></li>
+                        <li><a href="los_demonios.html">Los Demonios</a></li>
+                        <li><a href="el_idiota.html">El Idiota</a></li>
+                        <li><a href="cyc.html">Crimen y Castigo</a></li>
+                    </ul>
+                </li>
+                <li><a href="../historia.html">Historia</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+                <li class="creditos"><a href="../creditos.html">Créditos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="libro-main">
+
+            <div id="libro-hero">
+                <div class="portada">
+                    <img src="../imagenes/idiota_alba.jpg" alt="Portada El Idiota — Alba Clásicos">
+                    <div class="portada-overlay">
+                        <span>El Idiota</span>
+                        <span class="cita-autor">Fiódor Dostoyevski</span>
+                        <small>1869 · Alba Clásicos</small>
+                    </div>
+                </div>
+                <div class="sinopsis">
+                    <p class="subtitulo">Fiódor Dostoyevski · 1868–1869 · Novela filosófica</p>
+                    <h2>El Idiota</h2>
+                    <p>Dostoyevski se propuso algo que él mismo consideraba casi imposible: crear un personaje completamente bueno y hacer que esa bondad resultara convincente. El príncipe Myshkin — llamado «el idiota» por su ingenuidad, su epilepsia y su incapacidad para las maniobras sociales — es su intento más ambicioso de representar a Cristo en la Rusia del siglo XIX.</p>
+                    <p>El resultado no es el triunfo de la bondad sino su destrucción por contacto con el mundo real. Myshkin llega de Suiza cargado de compasión genuina y termina destruido, no por la maldad de quienes lo rodean, sino precisamente por el efecto que su bondad desmedida genera sobre ellos. La novela más triste de Dostoyevski: la que demuestra que la perfección moral es incompatible con la vida.</p>
+                    <div class="ficha-rapida">
+                        <span>Publicado: 1868–1869</span>
+                        <span>Revista: El Mensajero Ruso</span>
+                        <span>Escrito en Ginebra y Florencia</span>
+                        <span>Figura de Cristo en la modernidad</span>
+                        <span>La más trágica de sus novelas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separador"></div>
+
+            <div id="tabs-container">
+                <div class="tabs-nav">
+                    <button class="activo" onclick="cambiarTab(event, 'personajes')">Personajes</button>
+                    <button onclick="cambiarTab(event, 'capitulos')">Capítulos clave</button>
+                    <button onclick="cambiarTab(event, 'simbolismos')">Simbolismos</button>
+                    <button onclick="cambiarTab(event, 'frases')">Frases</button>
+                </div>
+
+                <!-- TAB: PERSONAJES -->
+                <div id="tab-personajes" class="tab-panel activo">
+                    <div class="personajes-grid">
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'myshkin')">
+                            <h3>Príncipe Lev Myshkin</h3>
+                            <div class="rol">«El Idiota» · La figura de Cristo</div>
+                            <p>Joven aristócrata que regresa a Rusia tras años en un sanatorio suizo. Epiléptico, extraordinariamente perceptivo y completamente incapaz de mentir o de calcular su propio beneficio. No es ingenuo: ve a los demás con una claridad que los incomoda. Lo que le falta es la capacidad de protegerse de lo que ve.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'nastasya')">
+                            <h3>Nastasya Filipovna</h3>
+                            <div class="rol">La mujer fatal · La más trágica</div>
+                            <p>Huérfana que fue protegida — y abusada — desde niña por el terrateniente Totsky. Extraordinariamente bella e inteligente, se autodestruye sistemáticamente porque ha interiorizado que no merece ser amada sino solamente deseada. La más compleja de las mujeres de Dostoyevski.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'rogozhin')">
+                            <h3>Parfión Rogozhin</h3>
+                            <div class="rol">El rival apasionado · El doble oscuro</div>
+                            <p>Comerciante joven que hereda una fortuna y la gasta en perseguir a Nastasya Filipovna por toda Rusia. Su amor es posesivo, absoluto y destructivo. Existe en la novela como el opuesto exacto de Myshkin: donde el príncipe quiere salvar a Nastasya, Rogozhin quiere poseerla — y lo que no puede poseer, lo destruye.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'aglaya')">
+                            <h3>Aglaya Ivanovna Yepanchina</h3>
+                            <div class="rol">La orgullosa · El amor imposible</div>
+                            <p>Hija menor de una familia aristocrática, la más hermosa e inteligente de las tres hermanas Yepanchin. Se enamora de Myshkin precisamente porque él no la trata como un trofeo social. Pero su orgullo y su incapacidad para aceptar la compasión de Myshkin hacia Nastasya la convierten en otra víctima de su propia naturaleza.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'ippolit')">
+                            <h3>Ippolit Terentyev</h3>
+                            <div class="rol">El joven tuberculoso · La rebelión ante la muerte</div>
+                            <p>Adolescente que está muriendo de tuberculosis y que intenta hacer una declaración filosófica de su propia muerte. Su «Explicación necesaria» — un ensayo que lee en voz alta antes de intentar suicidarse — es el monólogo más angustiado de toda la novela y el contraargumento más directo a la fe de Myshkin.</p>
+                        </div>
+
+                        <div class="personaje-card" onclick="mostrarPersonaje(event, 'lebedev')">
+                            <h3>Lukyan Timofeyich Lebedev</h3>
+                            <div class="rol">El bufón · La conciencia deforme</div>
+                            <p>Funcionario corrupto, adulador, borracho y espía que sin embargo posee una inteligencia aguda y momentos de honestidad brutal. Como todos los bufones de Dostoyevski, dice verdades que los personajes «serios» no se atreven a pronunciar. Su relación contradictoria con Myshkin es uno de los hilos cómicos más complejos de la novela.</p>
+                        </div>
+
+                    </div>
+
+                    <div id="detalle-myshkin" class="personaje-detalle">
+                        <h3>Príncipe Myshkin — La bondad como tragedia</h3>
+                        <p>Dostoyevski escribió en sus cuadernos que quería crear «un hombre positivamente bello» y que el único ejemplo de tal hombre en la historia era Cristo. Myshkin es su aproximación: un hombre que no puede mentir, que ve el alma de cada persona con una claridad compasiva, que no juzga. La pregunta de la novela es qué le ocurre a ese hombre cuando entra en contacto con el mundo real.</p>
+                        <p>La respuesta es la destrucción. No porque el mundo sea más fuerte que la bondad, sino porque la bondad de Myshkin, al ser absoluta, no puede elegir. Ama a Nastasya con compasión y a Aglaya con algo más cercano al amor romántico, y esa incapacidad de elegir entre las dos termina destruyendo a las dos y hundiéndolo a él. Su epilepsia — que en los segundos anteriores a la crisis le produce una sensación de armonía total con el mundo — es el símbolo de su condición: la plenitud de la experiencia espiritual seguida por el colapso físico total.</p>
+                        <div class="cita-personaje">"La belleza salvará al mundo."</div>
+                    </div>
+
+                    <div id="detalle-nastasya" class="personaje-detalle">
+                        <h3>Nastasya Filipovna — La belleza que no puede salvarse</h3>
+                        <p>Nastasya es el personaje más trágico de Dostoyevski porque su destrucción no viene de la maldad ajena sino de su propia lucidez. Sabe exactamente lo que le ha ocurrido, sabe exactamente cómo la ven los demás, y ha llegado a la conclusión de que esa visión es la correcta. Ha interiorizado tan completamente el juicio que el mundo hace de ella que no puede aceptar el amor de Myshkin — lo percibe como lástima disfrazada.</p>
+                        <p>En la escena de su cumpleaños, cuando arroja los cien mil rublos de Rogozhin al fuego y desafía a Ganya a sacarlos con las manos, Dostoyevski muestra el nivel de autodestrucción que ha alcanzado: prefiere quemarlo todo — el dinero, las posibilidades, su propio futuro — antes que aceptar el papel de objeto que la sociedad le ha asignado. Es un acto de poder y de suicidio al mismo tiempo.</p>
+                        <div class="cita-personaje">"Soy una mujer de la calle, el príncipe me haría su esposa. ¿No es eso suficiente para mí? Entonces, ¿por qué no puedo aceptarlo?"</div>
+                    </div>
+
+                    <div id="detalle-rogozhin" class="personaje-detalle">
+                        <h3>Parfión Rogozhin — El amor como destrucción</h3>
+                        <p>Rogozhin es el polo opuesto de Myshkin y al mismo tiempo su doble. Ambos aman a Nastasya; ambos son destruidos por ese amor. Pero donde Myshkin la ama con una compasión que ella no puede recibir, Rogozhin la ama con una posesividad que ella alimenta y teme. Su relación con Nastasya es la versión oscura de lo que el amor romántico contiene cuando se separa del respeto.</p>
+                        <p>El intento de Rogozhin de apuñalar a Myshkin y el asesinato final de Nastasya no son explosiones de pasión irracional — son la conclusión lógica de su premisa: si no puedo tenerte, nadie puede. La última escena de la novela, donde Myshkin y Rogozhin velan juntos el cuerpo de Nastasya en la habitación oscura, es uno de los momentos más perturbadores e inexplicablemente bellos de toda la literatura rusa.</p>
+                        <div class="cita-personaje">"Yo, príncipe, no sé pensar. Yo solo siento."</div>
+                    </div>
+
+                    <div id="detalle-aglaya" class="personaje-detalle">
+                        <h3>Aglaya — El orgullo como armadura</h3>
+                        <p>Aglaya representa todo lo que Nastasya no tiene: familia, posición, seguridad, el derecho reconocido de ser amada. Y sin embargo, ambas terminan destruidas por la misma incapacidad: la de aceptar el amor de Myshkin sin convertirlo en una competencia. Aglaya quiere a Myshkin completo, sin su compasión hacia Nastasya. Lo que no entiende — o no puede aceptar — es que esa compasión no es algo separable de él.</p>
+                        <p>Su confrontación final con Nastasya, donde las dos mujeres se miran y Myshkin es incapaz de elegir, es la escena más dolorosa de la novela porque no tiene villana. Las dos tienen razón. Las dos pierden. Dostoyevski no resuelve la tensión porque es irresoluble: el amor que incluye todo no puede, en la práctica, incluir dos personas que se excluyen mutuamente.</p>
+                        <div class="cita-personaje">"No quiero su compasión. Quiero que me prefiera."</div>
+                    </div>
+
+                    <div id="detalle-ippolit" class="personaje-detalle">
+                        <h3>Ippolit — La rebelión ante lo injustificable</h3>
+                        <p>Ippolit es el personaje más filosófico de la novela después del propio Myshkin, y el más hostil a la fe. Tiene dieciocho años, está muriendo de tuberculosis y ha llegado a una conclusión que no puede callar: si la naturaleza mata a los jóvenes, si la muerte es ciega, si no hay ninguna lógica detrás del sufrimiento, entonces la idea de un Dios justo es una mentira o una crueldad.</p>
+                        <p>Su argumento central es una descripción del cuadro de Hans Holbein «Cristo muerto en el sepulcro», que Dostoyevski vio en Basilea y que lo perturbó profundamente. El Cristo de Holbein no tiene nada de divino: es un cadáver realista, descompuesto, aterrador. Ippolit pregunta: si esto es lo que le ocurrió a Cristo, ¿cómo puede nadie creer en la resurrección? La fe de Myshkin no responde a este argumento con palabras — y Dostoyevski tampoco.</p>
+                        <div class="cita-personaje">"Ese cuadro podría hacer perder la fe a alguien. La naturaleza aparece en él como una bestia enorme, sorda e irresistible, o mejor dicho, como una máquina."</div>
+                    </div>
+
+                    <div id="detalle-lebedev" class="personaje-detalle">
+                        <h3>Lebedev — La verdad en boca del bufón</h3>
+                        <p>Lebedev cumple en El Idiota la función que los bufones cumplen en Shakespeare: decir lo que los personajes dignos no pueden decir sin rebajarse. Es corrupto, adulador y mentiroso, pero también es el único personaje que observa la situación con suficiente distancia como para verla con claridad.</p>
+                        <p>Sus interpretaciones del Apocalipsis — que da borracho en medio de la noche — son grotescas y al mismo tiempo contienen una intuición genuina: el mundo moderno, con sus ferrocarriles y su progreso, está destruyendo algo que no sabe nombrar. Dostoyevski usa a Lebedev para decir, a través de la parodia, lo que no podría decir con seriedad sin volverse panfletario.</p>
+                        <div class="cita-personaje">"Lo que une a los hombres no es la razón ni el interés sino aquello que no se puede razonar ni calcular."</div>
+                    </div>
+
+                </div>
+
+                <!-- TAB: CAPÍTULOS -->
+                <div id="tab-capitulos" class="tab-panel">
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte I · Capítulo I–II</div>
+                                <h3>El tren a San Petersburgo</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La presentación del mundo y de su opuesto</span>
+                                <p>La novela comienza en un tren donde Myshkin y Rogozhin se conocen sin saber quiénes son. La escena establece de inmediato el contraste central: Rogozhin habla del dinero, del deseo y de la posesión; Myshkin habla de la belleza de los paisajes suizos y de la paz que encontró en el sanatorio. Dos formas de estar en el mundo que van a colisionar durante las siguientes 600 páginas.</p>
+                                <p>El detalle más revelador: Myshkin llega a Rusia sin abrigo en pleno invierno, con una pequeña maleta y sin dinero. Rogozhin viene de heredar una fortuna enorme. Dostoyevski establece que su héroe no llega a Rusia a triunfar sino a existir — y que eso, en la Rusia de los años 1860, es ya una posición imposible.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte I · Capítulo XV–XVI</div>
+                                <h3>La noche del cumpleaños. Los cien mil rublos</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La escena más teatral de Dostoyevski</span>
+                                <p>En la fiesta de cumpleaños de Nastasya Filipovna, Rogozhin aparece con cien mil rublos en efectivo como «precio» de su amor. Nastasya lo arrebata, lo arroja al fuego de la chimenea y desafía a Ganya — el funcionario calculador que la busca por el dinero — a sacarlo con las manos desnudas.</p>
+                                <p>La escena concentra en un solo gesto todo el conflicto de la novela: el dinero como medida del valor humano, el rechazo de Nastasya a ser comprada, su autodestrucción como acto de poder. Cuando Ganya se desmaya sin haber intentado sacar el dinero, Nastasya lo recoge del fuego y se lo entrega. No lo quería: quería saber de qué estaba hecho cada hombre en esa habitación. Dostoyevski también.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte II · Capítulo IV</div>
+                                <h3>El cuadro de Holbein</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">El argumento más serio contra la fe en la novela</span>
+                                <p>En la casa de Rogozhin, Myshkin ve una copia del «Cristo muerto» de Hans Holbein el Joven. El cuadro, pintado en 1521, muestra el cuerpo de Cristo en el sepulcro con un realismo clínico que no deja espacio para la divinidad: es un cadáver en descomposición, con los ojos entreabiertos, sin ningún elemento que sugiera resurrección.</p>
+                                <p>Myshkin dice que ese cuadro puede hacer perder la fe. Rogozhin dice que a él «le gusta». Es la única vez en la novela que Rogozhin expresa algo parecido a una posición filosófica — y lo hace ante la imagen más anti-cristiana del arte occidental. Dostoyevski, que vio el cuadro en el Kunstmuseum de Basilea en 1867 y quedó perturbado durante días, usó esta escena para plantear la pregunta que no puede responder con argumentos: ¿qué ocurre con la fe si Cristo no resucitó?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte III · Capítulo V–VII</div>
+                                <h3>La explicación necesaria de Ippolit</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">El monólogo más angustiado de Dostoyevski</span>
+                                <p>En una reunión nocturna en el jardín de la dacha, el joven Ippolit lee en voz alta su «Explicación necesaria» — un ensayo filosófico de varias horas que ha escrito para ser leído antes de su suicidio. Está furioso, tiene fiebre, tose sangre, y aun así la asamblea no puede interrumpirlo.</p>
+                                <p>El ensayo es una acusación contra la naturaleza, contra la muerte, contra la idea de que el sufrimiento tenga sentido. Ippolit pregunta por qué debería morir a los dieciocho años sin haber tenido tiempo de vivir, y por qué esa muerte debería ser aceptada con resignación cristiana. Cuando termina, intenta dispararse — pero la pistola falla. La escena es simultáneamente trágica, grotesca y filosóficamente seria. Dostoyevski no responde a Ippolit: lo deja hablar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte IV · Capítulo VIII–IX</div>
+                                <h3>La confrontación de las dos mujeres</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">La escena más dolorosa de la novela</span>
+                                <p>Nastasya aparece en casa de los Yepanchin para encontrarse con Aglaya. Las dos mujeres que aman a Myshkin se miran por primera vez. Ninguna de las dos es la villana: Nastasya sabe que Myshkin estaría mejor con Aglaya y se lo dice; Aglaya no puede soportar la compasión de Myshkin hacia Nastasya y lo acusa de seguir enamorado de ella.</p>
+                                <p>Myshkin, que ama a las dos de maneras que no puede articular, es incapaz de elegir en ese momento. Y esa incapacidad — que en él no es cobardía sino genuina imposibilidad de desahurar su compasión de su amor — destruye las dos relaciones simultáneamente. Dostoyevski construyó esta escena para mostrar que la bondad perfecta, en la práctica, no puede funcionar en un mundo donde las personas requieren ser elegidas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capitulo-item" onclick="toggleCapitulo(this)">
+                        <div class="capitulo-titulo">
+                            <div>
+                                <div class="num-libro">Parte IV · Capítulo XI — Final</div>
+                                <h3>La última noche. El colapso</h3>
+                            </div>
+                            <span class="flecha">▼</span>
+                        </div>
+                        <div class="capitulo-cuerpo">
+                            <div class="capitulo-cuerpo-inner">
+                                <span class="importancia">El final más oscuro de Dostoyevski</span>
+                                <p>Nastasya huye de su propia boda con Myshkin y se va con Rogozhin. Horas después, Rogozhin la asesina. Myshkin llega a la habitación de Rogozhin y los dos hombres velan juntos el cuerpo cubierto por una sábana, en la oscuridad, sin hablar.</p>
+                                <p>Myshkin pasa la noche junto al asesino de la mujer que amaba, sin huir, sin juzgarlo, acompañándolo en el horror de lo que ha hecho. A la mañana siguiente lo encuentran en un estado de idiocia completa — la epilepsia ha destruido lo que quedaba de su mente. Es enviado de vuelta a Suiza. El «Cristo» de Dostoyevski no redime a nadie: él mismo queda destruido. Es el final más honesto y más desesperanzado de toda su obra.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- TAB: SIMBOLISMOS -->
+                <div id="tab-simbolismos" class="tab-panel">
+                    <div class="simbolismo-grid">
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family:serif; font-size:22px; font-weight:bold; color:#8B5A2B;">✝</div>
+                            <h3>Myshkin como figura de Cristo</h3>
+                            <p>Dostoyevski no disimula la referencia: Myshkin llega del exterior, cura con la presencia, ve el alma de cada persona, perdona sin condiciones y termina destruido por el mundo que vino a salvar. Pero la analogía es más compleja que una simple alegoría cristiana. Myshkin fracasa donde Cristo no fracasó: no puede elegir entre las dos mujeres, no puede salvar a Nastasya de sí misma. Dostoyevski sugiere que la bondad perfecta, encarnada en un ser humano real con limitaciones reales, no puede reproducir el milagro.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family:serif; font-size:22px; font-weight:bold; color:#8B5A2B;">◈</div>
+                            <h3>El cuadro de Holbein</h3>
+                            <p>«Cristo muerto en el sepulcro» de Hans Holbein el Joven (1521) es el único objeto inanimado que tiene peso filosófico propio en la novela. Dostoyevski lo usa como la pregunta que no puede responder con argumentos: si Cristo murió así — sin gloria, sin luz, como un hombre cualquiera descomponiéndose — ¿qué queda de la fe? La respuesta de la novela no es teológica sino narrativa: Myshkin, que ha visto el cuadro, sigue creyendo en la belleza. Pero termina destruido.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family:serif; font-size:22px; font-weight:bold; color:#8B5A2B;">⚡</div>
+                            <h3>La epilepsia como gracia y condena</h3>
+                            <p>Los segundos anteriores a una crisis epiléptica le producen a Myshkin una sensación de armonía y plenitud que describe como la experiencia más intensa de su vida. Dostoyevski, que también era epiléptico, usó esta experiencia autobiográfica para simbolizar la tensión central de la novela: la experiencia espiritual más alta va seguida del colapso más total. La gracia y la destrucción son inseparables. Al final de la novela, la epilepsia termina consumiendo todo lo que Myshkin era.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family:serif; font-size:22px; font-weight:bold; color:#8B5A2B;">◉</div>
+                            <h3>La belleza que no salva</h3>
+                            <p>La frase «la belleza salvará al mundo» —atribuida a Myshkin— es la más citada de Dostoyevski y la más malinterpretada. En el contexto de la novela, es una afirmación que la trama desmiente completamente: Nastasya Filipovna es la mujer más bella de San Petersburgo y su belleza no la salva sino que la condena. La belleza atrae la posesión, la envidia y la destrucción. Dostoyevski no la usa como promesa cumplida sino como pregunta abierta: ¿qué tipo de belleza podría salvar al mundo, si no es esta?</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family:serif; font-size:22px; font-weight:bold; color:#8B5A2B;">⌘</div>
+                            <h3>Los cien mil rublos en el fuego</h3>
+                            <p>El gesto de Nastasya al arrojar el dinero de Rogozhin a la chimenea es el momento más teatral de la novela y el más revelador de su carácter. No es un gesto de nobleza — es un acto de autodestrucción calculada. Nastasya no rechaza el dinero porque no lo necesite: lo rechaza porque acepta el dinero significaría aceptar que tiene precio. Prefiere destruirlo todo antes que ser reducida a mercancía. Es al mismo tiempo el acto más libre y el más suicida de la novela.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family:serif; font-size:22px; font-weight:bold; color:#8B5A2B;">∅</div>
+                            <h3>La habitación de Rogozhin</h3>
+                            <p>La casa de Rogozhin en San Petersburgo — oscura, laberíntica, con el retrato de Nastasya en el lugar de honor — es el espacio del deseo sin esperanza. El cuadro de Holbein cuelga en esa casa. La última escena de la novela ocurre en esa casa. Dostoyevski la convierte en el símbolo del amor que no puede transformarse en otra cosa: Rogozhin no puede amar de ninguna otra manera, y ese amor sin salida termina en el único lugar adonde puede ir.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family:serif; font-size:22px; font-weight:bold; color:#8B5A2B;">◁</div>
+                            <h3>El regreso a Suiza</h3>
+                            <p>Myshkin viene de Suiza al principio y regresa a Suiza al final, en el mismo estado mental que cuando llegó. La novela tiene una estructura circular que niega el arco narrativo convencional: nada aprendió, nada cambió, nada se transformó. El círculo es el símbolo de la inutilidad de la bondad perfecta en el mundo real. No es pesimismo — es la constatación de que ciertos tipos de santidad no son compatibles con vivir entre personas que sufren.</p>
+                        </div>
+
+                        <div class="simbolismo-card">
+                            <div class="icono" style="font-family:serif; font-size:22px; font-weight:bold; color:#8B5A2B;">▽</div>
+                            <h3>Los dos rivales velando juntos</h3>
+                            <p>La imagen final de la novela — Myshkin y Rogozhin sentados juntos junto al cuerpo de Nastasya, en silencio, en la oscuridad — es una de las más perturbadoras e inexplicablemente hermosas de la literatura rusa. El asesino y el que amaba a la víctima, juntos, sin palabras. Dostoyevski no explica la escena ni la juzga. Es el único momento de la novela donde el amor de Rogozhin y el de Myshkin se tocan sin destruirse mutuamente — porque ya no hay nada que destruir.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB: FRASES -->
+                <div id="tab-frases" class="tab-panel">
+                    <div class="frases-lista">
+
+                        <div class="frase-card">
+                            <blockquote>La belleza salvará al mundo.</blockquote>
+                            <div class="frase-origen">Príncipe Myshkin · Parte III</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Ese cuadro podría hacer perder la fe a alguien. La naturaleza aparece en él como una bestia enorme, sorda e irresistible, o mejor dicho como alguna máquina enorme del tiempo más moderno que ha apresado, triturado y devorado, sorda e insensiblemente, a un ser grandioso e inestimable.</blockquote>
+                            <div class="frase-origen">Ippolit Terentyev · Sobre el Cristo muerto de Holbein · Parte III</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>La compasión es la ley más importante y quizás la única de la existencia de toda la humanidad.</blockquote>
+                            <div class="frase-origen">Príncipe Myshkin</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>¿Acaso es posible ver en esto la imagen de la crucifixión del Señor? Si así es la muerte, ¿cómo puede haber resurrección?</blockquote>
+                            <div class="frase-origen">Príncipe Myshkin · Ante el cuadro de Holbein · Parte II</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Humíllate, hombre orgulloso, y antes que nada doblega tu orgullo. Humíllate, hombre ocioso, y ante todo trabaja en tu propio campo.</blockquote>
+                            <div class="frase-origen">Myshkin citando a Pushkin · Parte IV</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Tengo derecho a desear mi propia destrucción, igual que cualquier otro tiene derecho a desear su bien. Sin embargo, no quiero ninguna tutela.</blockquote>
+                            <div class="frase-origen">Ippolit Terentyev · La Explicación Necesaria · Parte III</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>En el mundo hay una sola cosa ante la que no se puede estar indiferente: la belleza. Y no hablo de la belleza de los cuadros.</blockquote>
+                            <div class="frase-origen">Príncipe Myshkin</div>
+                        </div>
+
+                        <div class="frase-card">
+                            <blockquote>Un hombre infeliz es suspicaz y tiene una tendencia a ver insultos en todas partes.</blockquote>
+                            <div class="frase-origen">Príncipe Myshkin · Parte I</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="../index.html">Principal</a></p>
+                <p><a href="libros.html">Libros</a></p>
+                <p><a href="../historia.html">Historia</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Ayuda</h1>
+                <p><a href="../contacto.html">Contacto</a></p>
+                <p><a href="../creditos.html">Créditos</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Honduras, Cortés</address>
+                <small>&copy; Darién Calderón 2026</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+
+    <script src="../js/libros.js"></script>
+
+</body>
+</html>

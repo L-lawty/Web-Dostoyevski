@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Créditos — Dostoyevski</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Créditos del proyecto y agradecimientos">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/creditos.css">
+    <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+    <link rel="icon" type="image/png" href="/imagenes/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/imagenes/favicon.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <h1>Fiódor Mijáilovich Dostoyevski</h1>
+        </div>
+    </header>
+
+    <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="libros/libros.html">Libros</a>
+                    <ul>
+                        <li><a href="libros/LHK.html">Los Hermanos Karamázov</a></li>
+                        <li><a href="libros/los_demonios.html">Los Demonios</a></li>
+                        <li><a href="libros/el_idiota.html">El Idiota</a></li>
+                        <li><a href="libros/cyc.html">Crimen y Castigo</a></li>
+                    </ul>
+                </li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="creditos"><a href="creditos.html">Créditos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <div id="creditos-main">
+                <section id="portada-academica">
+                    <div class="logo">
+                        <img src="./imagenes/logo.jpeg" alt="logo">
+                    </div>
+                    <p class="instituto">
+                        Instituto
+                        <span class="valor-editable">José Trinidad Reyes</span>
+                    </p>
+
+                    <h1 class="titulo-proyecto">Fiódor Dostoyevski</h1>
+                    <p class="subtitulo-proyecto">Proyecto de Desarrollo Web</p>
+
+                    <div class="ficha-academica">
+
+                        <div class="dato nombre">
+                            <span class="etiqueta">Alumno</span>
+                            <span class="valor-editable">Darién Calderón</span> 
+                        </div> 
+
+                        <div class="dato">
+                            <span class="etiqueta">Asignatura</span>
+                            <span class="valor-editable">Diseño Web</span>
+                        </div>
+
+
+                        <div class="dato">
+                            <span class="etiqueta">Docente</span>
+                            <span class="valor-editable">Lic.Rony Áviles</span>
+                        </div>
+
+                        <div class="dato">
+                            <span class="etiqueta">Curso</span>
+                            <span class="valor-editable">12 Informática</span>
+                        </div>
+
+                        <div class="dato">
+                            <span class="etiqueta">Sección</span>
+                            <span class="valor-editable">III</span>
+                        </div>
+
+                        <div class="dato">
+                            <span class="etiqueta">Parcial</span>
+                            <span class="valor-editable">III PARCIAL</span>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="separador"></div>
+                <section id="agradecimientos">
+                    <h2>Muchas Gracias por haber rellenado el presente formulario a:</h2>
+
+                    <div class="caja-agradecimientos">
+                        <div class="lista-nombres"
+                             id="lista-agradecimientos"
+                             hx-get="/api/agradecimientos"
+                             hx-trigger="load"
+                             hx-swap="innerHTML">
+                            <span class="estado-vacio">Aquí aparecerán los nombres de quienes escriban desde la sección de Contacto.</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="index.html">Principal</a></p>
+                <p><a href="libros/libros.html">Libros</a></p>
+                <p><a href="historia.html">Historia</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Ayuda</h1>
+                <p><a href="contacto.html">Contacto</a></p>
+                <p><a href="creditos.html">Créditos</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Honduras, Cortés</address>
+                <small>&copy; Darién Calderón 2026</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+
+</body>
+</html>
