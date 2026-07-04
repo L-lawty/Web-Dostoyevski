@@ -78,6 +78,7 @@ async def mantener_viva_db():
         db = get_db()
         cursor = db.cursor()
         cursor.execute("SELECT 1")
+        cursor.fetchone()  
         cursor.close()
         db.close()
         return {"status":status.HTTP_200_OK, "mensaje": "Render y Aiven despiertos"}
