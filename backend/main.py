@@ -83,5 +83,5 @@ async def mantener_viva_db():
         db.close()
         return {"status":status.HTTP_200_OK, "mensaje": "Render y Aiven despiertos"}
     except Exception as e:
-        return {"Error":{type(e).__name__:e}}
+        return {"Error": type(e).__name__, "detalle": str(e)}
 app.mount("/", StaticFiles(directory=str(BASE_DIR), html=True), name="static")
