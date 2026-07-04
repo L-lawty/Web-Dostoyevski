@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Form, Request
+from fastapi import FastAPI, Form, Request, status
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -72,5 +72,15 @@ async def agradecimientos():
         logger.error(f"Error en /api/agradecimientos: {type(e).__name__}: {e}")
         return '<span class="estado-vacio">No se pudieron cargar los agradecimientos.</span>'
 
-
+@app.get("/MantenerVivo")
+async def mantener_viva_db():
+    try:
+        db = get_db()
+        cursor = db.cursor()
+        cursor.execute("SELECT 1")
+        cursor.close()
+        db.close()
+        return {"status":status.HTTP_200_OK, "mensaje": "Render y Aiven despiertos"}
+    except Exception as e:
+        return {"Error":{type(e).__name__:e}}
 app.mount("/", StaticFiles(directory=str(BASE_DIR), html=True), name="static")
